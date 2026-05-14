@@ -49,22 +49,37 @@
     {{ content }}
   </div>
 
-  <script>
-    function check(btn, isCorrect) {
-      const parent = btn.parentElement;
-      const buttons = parent.querySelectorAll('.quiz-btn');
-      
-      // Блокуємо всі кнопки в цьому питанні після натискання
+ <script>
+  function check(btn, isCorrect, explanation) {
+    const parent = btn.parentElement;
+    const buttons = parent.querySelectorAll('.quiz-btn');
+    
+    // Блокуємо всі кнопки
+    buttons.forEach(b => {
+      b.style.pointerEvents = 'none';
+      b.style.opacity = '0.6';
+    });
+    
+    // Підсвічуємо вибрану кнопку
+    btn.style.opacity = '1';
+    if(isCorrect === true || isCorrect === ' some_string_true') {
+      btn.classList.add('correct');
+    } else {
+      btn.classList.add('incorrect');
+      // Якщо помилилися — підсвітимо правильну для наочності
       buttons.forEach(b => {
-        b.disabled = true;
+        // Тут ми шукаємо кнопку, у якої в onclick написано 'true'
+        if(b.getAttribute('onclick').includes('true')) b.classList.add('correct');
       });
-      
-      if(isCorrect) {
-        btn.classList.add('correct');
-      } else {
-        btn.classList.add('incorrect');
-      }
     }
+
+    // Показуємо пояснення
+    const feedback = parent.querySelector('.feedback');
+    if (feedback) {
+      feedback.innerHTML = explanation;
+      feedback.style.display = 'block';
+    }
+  }
   </script>
 </body>
 </html>
