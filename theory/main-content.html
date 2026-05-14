@@ -1,47 +1,170 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Теорія · Введення в ШІ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-    <style>
-        /* Вставляємо ваші змінні та базові стилі з index.html */
-        :root {
-            --bg: #0a0e1a; --surface: #111827; --card: #161d2e;
-            --border: #1e2d45; --accent: #00d4ff; --text: #e2e8f0;
-            --muted: #64748b; --heading: #f8fafc;
-        }
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.7;
-            padding: 2rem;
-        }
-        .content-container {
-            max-width: 800px;
-            margin: 100px auto;
-            background: var(--card);
-            padding: 3rem;
-            border-radius: 24px;
-            border: 1px solid var(--border);
-        }
-        h1, h2, h3 { font-family: 'Syne', sans-serif; color: var(--heading); margin-top: 2rem; }
-        h1 { color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 1rem; }
-        code { background: #000; padding: 0.2rem 0.4rem; border-radius: 4px; color: var(--accent); }
-        .back-link { color: var(--accent); text-decoration: none; font-weight: bold; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Теорія · Введення в ШІ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:       #0a0e1a;
+      --surface:  #111827;
+      --card:     #161d2e;
+      --border:   #1e2d45;
+      --accent:   #00d4ff;
+      --accent2:  #7c3aed;
+      --text:     #e2e8f0;
+      --muted:    #64748b;
+      --heading:  #f8fafc;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover { opacity: 0.7; transform: translateX(-5px); }
+
+    h1, h2, h3 {
+      font-family: 'Syne', sans-serif;
+      color: var(--heading);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 3.5rem; font-weight: 800; background: linear-gradient(to right, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    h2 { font-size: 2rem; margin-top: 4rem; border-left: 4px solid var(--accent); padding-left: 1rem; }
+    h3 { font-size: 1.5rem; margin-top: 2rem; color: var(--accent); }
+
+    .theory-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      border-radius: 24px;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    p { margin-bottom: 1.2rem; font-size: 1.1rem; color: var(--text); opacity: 0.9; }
+
+    ul { margin-bottom: 1.2rem; list-style: none; }
+    li { margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; }
+    li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
+
+    .highlight { color: var(--accent); font-weight: 600; }
+    
+    code {
+      background: rgba(0, 212, 255, 0.1);
+      color: var(--accent);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-family: monospace;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--accent2);
+      padding: 1rem 2rem;
+      background: rgba(124, 58, 237, 0.05);
+      margin: 2rem 0;
+      font-style: italic;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+  </style>
 </head>
 <body>
-    <div class="content-container">
-        <a href="../index.html" class="back-link">← На головну</a>
-        
-        <h1>Розділ 1: Введення у Штучний Інтелект</h1>
-        
-        <h2>1.1. Що таке ШІ?</h2>
-        <p>Штучний інтелект (ШІ) — це здатність комп'ютерної системи імітувати когнітивні функції людини[cite: 3]. Ми вивчаємо вузький (ANI), загальний (AGI) та надзагальний (ASI) ШІ[cite: 37].</p>
-        
-        </div>
+
+  <div class="container">
+    <a href="../index.html" class="back-btn">← Повернутися на головну</a>
+
+    <div class="badge">Повний курс · 18 уроків</div>
+    <h1>Теорія Штучного Інтелекту</h1>
+
+    <section class="theory-card">
+      <h2>Блок 1. Природа та основи ШІ</h2>
+      <h3>Що таке ШІ та його класифікація</h3>
+      <p>Штучний інтелект (ШІ) — це не одна програма, а ціла галузь, що створює системи, здатні вчитися на досвіді. Ми розрізняємо:</p>
+      <ul>
+        <li><span class="highlight">Вузький ШІ (ANI):</span> Майстер однієї справи (наприклад, розпізнавання пісні в Shazam).</li>
+        <li><span class="highlight">Загальний ШІ (AGI):</span> Рівень людського мозку (поки лише в теорії).</li>
+      </ul>
+      
+      <h3>Машинне навчання (ML)</h3>
+      <p>Це спосіб "вирощування" інтелекту. Замість коду ми даємо дані. Основні методи:</p>
+      <ul>
+        <li>Навчання з учителем (на розмічених прикладах).</li>
+        <li>Навчання без учителя (пошук закономірностей).</li>
+        <li>Навчання з підкріпленням (метод батога та пряника).</li>
+      </ul>
+      
+
+[Image of machine learning process]
+
+    </section>
+
+    <section class="theory-card">
+      <h2>Блок 2. Як працюють нейромережі та LLM</h2>
+      <p>Нейронні мережі імітують біологічні нейрони. Вони складаються з шарів, де кожен шар "витягує" певні ознаки з даних.</p>
+      <blockquote>
+        "Сучасні мовні моделі (LLM), як-от GPT, не розуміють текст так, як ми. Вони прогнозують ймовірність появи наступного слова."
+      </blockquote>
+      <h3>Промпт-інженерія</h3>
+      <p>Для отримання якісної відповіді використовуйте структуру: <code>Роль</code> + <code>Контекст</code> + <code>Завдання</code> + <code>Формат</code>.</p>
+      
+
+[Image of artificial neural network layers]
+
+    </section>
+
+    <section class="theory-card">
+      <h2>Блок 3. Генеративні технології</h2>
+      <p>Генеративний ШІ створює новий контент: тексти, зображення, музику та код. Для зображень використовується <span class="highlight">дифузія</span> — процес перетворення цифрового шуму на чітку картинку за запитом користувача.</p>
+      
+    </section>
+
+    <section class="theory-card">
+      <h2>Блок 4. Етика та Майбутнє</h2>
+      <p>Головні виклики сучасності:</p>
+      <ul>
+        <li><span class="highlight">Упередженість:</span> ШІ може копіювати людські стереотипи.</li>
+        <li><span class="highlight">Дипфейки:</span> Ризик створення фальшивих відео та аудіо.</li>
+        <li><span class="highlight">Академічна доброчесність:</span> Використання ШІ для допомоги, а не для заміни власного мислення.</li>
+      </ul>
+    </section>
+
+  </div>
+
 </body>
 </html>
