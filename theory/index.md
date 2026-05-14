@@ -1,30 +1,27 @@
 ---
 layout: default
-title: Теоретична база
+title: Навчальні матеріали
 ---
 
-# 📚 Навчальні матеріали
+# 📚 Навчальний центр
 
-Оберіть розділ для вивчення:
+Оберіть розділ, щоб зануритися у світ штучного інтелекту.
 
 <div class="blocks-grid">
 
-  <a href="https://ilona160.github.io/AI/theory/main-content.html" class="block-card accent-1">
-    <span class="block-icon">📖</span>
-    <h3 class="block-title">Основний курс</h3>
-    <p class="block-desc">Повний текст уроків: від історії до технічного устрою ШІ.</p>
+  <a href="main-content.html" class="theory-card">
+    <h3>📖 Основна теорія</h3>
+    <p>Повний курс від основ до складних нейромереж. 18 уроків структурованого матеріалу.</p>
   </a>
 
-  <a href="https://ilona160.github.io/AI/theory/examples.html" class="block-card accent-2">
-    <span class="block-icon">💡</span>
-    <h3 class="block-title">Приклади та кейси</h3>
-    <p class="block-desc">Реальні приклади промптів, генерації зображень та коду.</p>
+  <a href="examples.html" class="theory-card">
+    <h3>💡 Приклади та кейси</h3>
+    <p>Реальні промпти, розбір генерацій та готові приклади коду на Python.</p>
   </a>
 
-  <a href="https://ilona160.github.io/AI/theory/glossary.html" class="block-card accent-3">
-    <span class="block-icon">📑</span>
-    <h3 class="block-title">Глосарій термінів</h3>
-    <p class="block-desc">Словник основних понять та визначень у сфері ШІ.</p>
+  <a href="glossary.html" class="theory-card">
+    <h3>📑 Глосарій</h3>
+    <p>Словник термінів, який допоможе розібратися у складних поняттях ШІ.</p>
   </a>
 
 </div>
