@@ -33,25 +33,35 @@ title: Приклади застосування ШІ
 ---
 
 ---
-## 💻 Кейс 3: Допомога у програмуванні (Python)
+## 💻 Кейс 3: Створення калькулятора на Python
 
-**Завдання:** Створити алгоритм, який допомагає учню розрахувати свій середній навчальний бал за семестр.
+Цей приклад покаже, як ШІ допомагає писати програмний код для вирішення навчальних задач.
 
-> **Запит до ШІ:** "Ти — асистент із програмування. Напиши на Python код, який запитує у користувача 5 оцінок, зберігає їх у список і виводить середнє арифметичне. Додай коментарі до кожного рядка."
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.2); padding: 1.5rem; border-radius: 16px;">
+    <p><strong>Крок 1: Копіюємо промпт</strong></p>
+    <p style="color: var(--muted); font-size: 0.9rem;">Скопіюйте цей запит, щоб отримати код від ШІ:</p>
+    <blockquote style="margin: 0; background: rgba(0, 212, 255, 0.05); border-left: 4px solid var(--accent); padding: 10px; font-style: italic;">
+        "Напиши простий код на Python, який запитує у користувача 5 оцінок і виводить їх середнє арифметичне. Додай коментарі до кожного рядка."
+    </blockquote>
+</div>
 
-**Результат ШІ:**
-```python
-# 1. Створюємо порожній список для зберігання оцінок
-grades = []
-
-# 2. Використовуємо цикл для введення 5 значень
-for i in range(5):
-    # Запитуємо оцінку та перетворюємо її на число (float)
-    val = float(input(f"Введіть оцінку №{i+1}: "))
-    grades.append(val)
-
-# 3. Обчислюємо середнє (сума всіх елементів / кількість)
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.2); padding: 1.5rem; border-radius: 16px; margin-top: 1rem;">
+    <p><strong>Крок 2: Готовий код (результат ШІ)</strong></p>
+    <pre style="background: #000; padding: 15px; border-radius: 10px; color: #10b981; font-size: 0.85rem; overflow-x: auto;">
+# Створюємо список та рахуємо середній бал
+grades = [10, 12, 8, 9, 11] # Приклад оцінок
 average = sum(grades) / len(grades)
+print(f"Ваш середній бал: {average}")
+    </pre>
+</div>
 
-# 4. Виводимо фінальний результат
-print(f"Ваш середній бал за семестр: {average:.2f}")
+<div class="content-block" style="background: rgba(0, 212, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid var(--accent); padding: 1.5rem; border-radius: 16px; margin-top: 1rem; text-align: center;">
+    <p><strong>Крок 3: Спробуйте прямо зараз!</strong></p>
+    <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Натисніть кнопку нижче, щоб відкрити онлайн-редактор, вставити туди код і побачити, як він працює у реальному часі.</p>
+    <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" class="nav-link" style="display: inline-block; background: var(--accent); color: var(--bg); font-weight: bold; border: none;">▶ Відкрити Python Компілятор</a>
+</div>
+
+---
+
+### Чому це важливо?
+ШІ не просто пише за вас код, він допомагає зрозуміти логіку. Ви можете попросити його: *"Поясни, що робить функція sum()"* або *"Як змінити код, щоб він працював для 10 оцінок?"*.
