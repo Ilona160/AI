@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Введення в штучний інтелект · 10–11 клас</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:       #0a0e1a;
+      --surface:  #111827;
+      --card:     #161d2e;
+      --border:   #1e2d45;
+      --accent:   #00d4ff;
+      --accent2:  #7c3aed;
+      --accent3:  #10b981;
+      --text:     #e2e8f0;
+      --muted:    #64748b;
+      --heading:  #f8fafc;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── GRID BACKGROUND ── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2.5rem;
+      background: rgba(10, 14, 26, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,58,237,0.07) 0%, transparent 70%);
+      top: 30%;
+      right: 10%;
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(0, 212, 255, 0.08);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 2rem;
+      animation: fadeDown 0.6s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1.0;
+      color: var(--heading);
+      letter-spacing: -0.04em;
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+      animation: fadeDown 0.7s 0.1s ease both;
+    }
+
+    h1 span {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 560px;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      animation: fadeDown 0.7s 0.2s ease both;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      animation: fadeDown 0.7s 0.3s ease both;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .meta-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--heading);
+      line-height: 1;
+    }
+
+    .meta-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .meta-divider {
+      width: 1px;
+      height: 40px;
+      background: var(--border);
+      align-self: center;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeDown 0.7s 0.4s ease both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: var(--bg);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+      box-shadow: 0 0 30px rgba(0,212,255,0.2);
+    }
+    .btn-primary:hover {
+      background: #33dcff;
+      box-shadow: 0 0 50px rgba(0,212,255,0.35);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--text);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* ── SCROLL INDICATOR ── */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--muted);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      animation: fadeDown 1s 0.8s ease both;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+      animation: scrollLine 1.5s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%   { transform: scaleY(0); transform-origin: top; }
+      50%  { transform: scaleY(1); transform-origin: top; }
+      51%  { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      position: relative;
+      z-index: 1;
+      padding: 6rem 2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--heading);
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 540px;
+      margin-bottom: 3.5rem;
+      font-weight: 300;
+    }
+
+    /* ── BLOCKS GRID ── */
+    .blocks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .block-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .block-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 60%, rgba(0,212,255,0.04));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .block-card:hover {
+      border-color: rgba(0, 212, 255, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 0 1px rgba(0,212,255,0.1);
+    }
+    .block-card:hover::before { opacity: 1; }
+
+    .block-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .block-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .block-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .block-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .block-lessons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .lesson-chip {
+      font-size: 0.7rem;
+      font-weight: 500;
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .block-card.accent-1 { border-top: 2px solid var(--accent); }
+    .block-card.accent-2 { border-top: 2px solid var(--accent2); }
+    .block-card.accent-3 { border-top: 2px solid var(--accent3); }
+    .block-card.accent-4 { border-top: 2px solid #f59e0b; }
+    .block-card.accent-5 { border-top: 2px solid #ec4899; }
+
+    /* ── OUTCOMES ── */
+    .outcomes-section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bloom-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .bloom-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .bloom-level {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .bloom-level.l1 { background: rgba(0,212,255,0.12); color: var(--accent); }
+    .bloom-level.l2 { background: rgba(16,185,129,0.12); color: var(--accent3); }
+    .bloom-level.l3 { background: rgba(245,158,11,0.12); color: #f59e0b; }
+    .bloom-level.l4 { background: rgba(239,68,68,0.12); color: #ef4444; }
+    .bloom-level.l5 { background: rgba(124,58,237,0.12); color: var(--accent2); }
+    .bloom-level.l6 { background: rgba(236,72,153,0.12); color: #ec4899; }
+
+    .bloom-info h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 0.4rem;
+    }
+
+    .bloom-info p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── TOOLS ── */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .tool-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+    .tool-card:hover {
+      border-color: rgba(0,212,255,0.25);
+      transform: translateX(4px);
+    }
+
+    .tool-emoji { font-size: 1.5rem; }
+
+    .tool-info h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 0.2rem;
+    }
+
+    .tool-info p {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { display: none; }
+      .hero { padding: 6rem 1.25rem 3rem; }
+      section { padding: 4rem 1.25rem; }
+      .hero-meta { gap: 1.25rem; }
+      .meta-divider { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">ШІ · 10–11 клас</a>
+    <ul class="nav-links">
+      <li><a href="#blocks">Блоки</a></li>
+      <li><a href="#outcomes">Результати</a></li>
+      <li><a href="theory/main-content.html">Теорія</a></li>
+      <li><a href="practice/tasks.html">Практика</a></li>
+      <li><a href="tests/self-check.html">Тести</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="badge">Інформатика · Базовий рівень · МОН України</div>
+
+    <h1>Введення в<br /><span>штучний інтелект</span></h1>
+
+    <p class="hero-sub">
+      Навчальні матеріали для учнів 10–11 класів. Від нейронних мереж до етики ШІ — зрозуміло, практично та актуально.
+    </p>
+
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-num">18</span>
+        <span class="meta-label">Уроків</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-num">5</span>
+        <span class="meta-label">Блоків</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-num">6</span>
+        <span class="meta-label">Рівнів Блума</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-num">10+</span>
+        <span class="meta-label">ШІ-інструментів</span>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="theory/main-content.html" class="btn-primary">
+        ▶ Почати навчання
+      </a>
+      <a href="https://github.com" class="btn-secondary" target="_blank">
+        ⎇ GitHub репозиторій
+      </a>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Гортати
+    </div>
+  </section>
+
+  <!-- BLOCKS -->
+  <section id="blocks">
+    <div class="container">
+      <p class="section-label">Навчальна програма</p>
+      <h2 class="section-title">5 тематичних блоків</h2>
+      <p class="section-desc">18 уроків, структурованих від фундаментальних понять до практичних проєктів і критичного аналізу.</p>
+
+      <div class="blocks-grid">
+
+        <a href="theory/main-content.html#block1" class="block-card accent-1 reveal">
+          <span class="block-num">Блок 01 · Уроки 1–4</span>
+          <span class="block-icon">🧠</span>
+          <h3 class="block-title">Що таке ШІ?</h3>
+          <p class="block-desc">Від побутових прикладів ШІ до нейронних мереж. Розбираємо машинне навчання без страху і формул.</p>
+          <div class="block-lessons">
+            <span class="lesson-chip">ШІ навколо нас</span>
+            <span class="lesson-chip">Історія ШІ</span>
+            <span class="lesson-chip">Машинне навчання</span>
+            <span class="lesson-chip">Нейронні мережі</span>
+          </div>
+        </a>
+
+        <a href="theory/main-content.html#block2" class="block-card accent-2 reveal">
+          <span class="block-num">Блок 02 · Уроки 5–7</span>
+          <span class="block-icon">💬</span>
+          <h3 class="block-title">Мистецтво промптів</h3>
+          <p class="block-desc">Як «говорити» з ШІ ефективно. Анатомія промпту, ітеративний підхід і критична оцінка результатів.</p>
+          <div class="block-lessons">
+            <span class="lesson-chip">Як працює LLM</span>
+            <span class="lesson-chip">Промпт-інженерія</span>
+            <span class="lesson-chip">ШІ як помічник</span>
+          </div>
+        </a>
+
+        <a href="theory/main-content.html#block3" class="block-card accent-3 reveal">
+          <span class="block-num">Блок 03 · Уроки 8–11</span>
+          <span class="block-icon">🎨</span>
+          <h3 class="block-title">Генеративний ШІ</h3>
+          <p class="block-desc">Текст, зображення, аудіо, відео. Дифузійні моделі, дипфейки та відповідальне використання.</p>
+          <div class="block-lessons">
+            <span class="lesson-chip">Текст і код</span>
+            <span class="lesson-chip">Зображення</span>
+            <span class="lesson-chip">Аудіо і відео</span>
+            <span class="lesson-chip">Практикум</span>
+          </div>
+        </a>
+
+        <a href="theory/main-content.html#block4" class="block-card accent-4 reveal">
+          <span class="block-num">Блок 04 · Уроки 12–15</span>
+          <span class="block-icon">⚖️</span>
+          <h3 class="block-title">ШІ та суспільство</h3>
+          <p class="block-desc">Упередженість алгоритмів, конфіденційність, авторське право, майбутнє праці. Думаємо критично.</p>
+          <div class="block-lessons">
+            <span class="lesson-chip">Упередженість</span>
+            <span class="lesson-chip">Конфіденційність</span>
+            <span class="lesson-chip">Авторське право</span>
+            <span class="lesson-chip">Майбутнє праці</span>
+          </div>
+        </a>
+
+        <a href="practice/projects.html" class="block-card accent-5 reveal">
+          <span class="block-num">Блок 05 · Уроки 16–18</span>
+          <span class="block-icon">🚀</span>
+          <h3 class="block-title">Проєктна робота</h3>
+          <p class="block-desc">Фінальний проєкт на вибір: навчальний матеріал, дослідження, творчий продукт або порівняльний аналіз.</p>
+          <div class="block-lessons">
+            <span class="lesson-chip">Планування</span>
+            <span class="lesson-chip">Захист 1</span>
+            <span class="lesson-chip">Захист 2</span>
+            <span class="lesson-chip">Рефлексія</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section id="outcomes" class="outcomes-section">
+    <div class="container">
+      <p class="section-label">Таксономія Блума</p>
+      <h2 class="section-title">Результати навчання</h2>
+      <p class="section-desc">Курс охоплює всі шість рівнів когнітивної складності — від базових знань до самостійного створення.</p>
+
+      <div class="bloom-grid">
+        <div class="bloom-card reveal">
+          <div class="bloom-level l1">L1</div>
+          <div class="bloom-info">
+            <h4>Запам'ятовування</h4>
+            <p>Називати ключові поняття: ШІ, ML, нейронна мережа, датасет, промпт, генеративний ШІ</p>
+          </div>
+        </div>
+        <div class="bloom-card reveal">
+          <div class="bloom-level l2">L2</div>
+          <div class="bloom-info">
+            <h4>Розуміння</h4>
+            <p>Пояснювати принципи машинного навчання і нейромереж; розрізняти типи ШІ своїми словами</p>
+          </div>
+        </div>
+        <div class="bloom-card reveal">
+          <div class="bloom-level l3">L3</div>
+          <div class="bloom-info">
+            <h4>Застосування</h4>
+            <p>Складати ефективні промпти, використовувати ШІ-інструменти для вирішення навчальних задач</p>
+          </div>
+        </div>
+        <div class="bloom-card reveal">
+          <div class="bloom-level l4">L4</div>
+          <div class="bloom-info">
+            <h4>Аналіз</h4>
+            <p>Порівнювати ШІ-інструменти, досліджувати упередженість, аналізувати етичні дилеми</p>
+          </div>
+        </div>
+        <div class="bloom-card reveal">
+          <div class="bloom-level l5">L5</div>
+          <div class="bloom-info">
+            <h4>Оцінювання</h4>
+            <p>Оцінювати якість ШІ-контенту за власними критеріями; аргументувати доцільність використання ШІ</p>
+          </div>
+        </div>
+        <div class="bloom-card reveal">
+          <div class="bloom-level l6">L6</div>
+          <div class="bloom-info">
+            <h4>Створення</h4>
+            <p>Розробляти навчальні продукти, проєктувати ланцюжки промптів, створювати мультимедійні проєкти</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools">
+    <div class="container">
+      <p class="section-label">Інструментарій</p>
+      <h2 class="section-title">Використані ШІ-інструменти</h2>
+      <p class="section-desc">Матеріали розроблені та перевірені з використанням цих інструментів. Усі згенеровані тексти відредаговані вручну.</p>
+
+      <div class="tools-grid">
+        <a href="https://claude.ai" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">🤖</span>
+          <div class="tool-info">
+            <h4>Claude (Anthropic)</h4>
+            <p>Теорія, плани уроків, завдання</p>
+          </div>
+        </a>
+        <a href="https://chat.openai.com" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">💡</span>
+          <div class="tool-info">
+            <h4>ChatGPT (OpenAI)</h4>
+            <p>Приклади, кейси, тести</p>
+          </div>
+        </a>
+        <a href="https://gemini.google.com" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">✨</span>
+          <div class="tool-info">
+            <h4>Gemini (Google)</h4>
+            <p>Перевірка та порівняння відповідей</p>
+          </div>
+        </a>
+        <a href="https://www.canva.com" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">🎨</span>
+          <div class="tool-info">
+            <h4>Canva AI</h4>
+            <p>Ілюстрації та інфографіка</p>
+          </div>
+        </a>
+        <a href="https://teachablemachine.withgoogle.com" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">🏫</span>
+          <div class="tool-info">
+            <h4>Teachable Machine</h4>
+            <p>Практика ML без коду (Урок 3)</p>
+          </div>
+        </a>
+        <a href="https://playground.tensorflow.org" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">🔬</span>
+          <div class="tool-info">
+            <h4>TensorFlow Playground</h4>
+            <p>Симулятор нейромережі (Урок 4)</p>
+          </div>
+        </a>
+        <a href="https://firefly.adobe.com" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">🔥</span>
+          <div class="tool-info">
+            <h4>Adobe Firefly</h4>
+            <p>Генерація зображень (Урок 9)</p>
+          </div>
+        </a>
+        <a href="https://dall-e.openai.com" target="_blank" class="tool-card reveal">
+          <span class="tool-emoji">🖼️</span>
+          <div class="tool-info">
+            <h4>DALL-E (OpenAI)</h4>
+            <p>Концептуальні ілюстрації</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">ШІ · 10–11 клас</div>
+    <p class="footer-text">
+      Лабораторна робота № 2 · Розробка навчальних матеріалів з використанням генеративного ШІ<br />
+      Базовий рівень · Програма МОН України · 2025–2026 н.р. · Розроблено студенткою Моря Ілона, МІ-22
+    </p>
+    <div class="footer-links">
+      <a href="theory/main-content.html">Теорія</a>
+      <a href="practice/tasks.html">Практика</a>
+      <a href="tests/self-check.html">Тести</a>
+      <a href="theory/glossary.html">Глосарій</a>
+      <a href="resources/links.html">Ресурси</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
