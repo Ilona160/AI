@@ -18,16 +18,16 @@
       background-size: 40px 40px;
     }
 
-    /* НАВІГАЦІЯ: Максимально ліворуч */
+    /* НАВІГАЦІЯ */
     nav {
       position: fixed; top: 0; left: 0; width: 100%;
       background: rgba(10, 14, 26, 0.96); backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border); 
       padding: 0.7rem 1rem; 
       display: flex; 
-      justify-content: flex-start; /* ВСЕ ЛІВОРУЧ */
+      justify-content: flex-start;
       align-items: center; 
-      gap: 12px; /* Мінімальний розрив між лого та кнопкою */
+      gap: 12px;
       z-index: 1000;
     }
 
@@ -36,7 +36,7 @@
       text-decoration: none; font-size: 0.9rem;
       white-space: nowrap;
       padding-right: 10px;
-      border-right: 1px solid var(--border); /* Розділювач */
+      border-right: 1px solid var(--border);
     }
 
     .nav-link { 
@@ -51,9 +51,39 @@
     .nav-link:hover { border-color: var(--accent); color: var(--accent); }
 
     .container { max-width: 850px; margin: 0 auto; }
-    .content-block { background: var(--card); border: 1px solid var(--border); padding: 2rem; border-radius: 24px; margin-bottom: 2rem; }
 
-    /* Тести */
+    /* ТЕКСТ ТА КОНТЕНТ */
+    h1, h2, h3 { font-family: 'Syne', sans-serif; color: var(--heading); margin-top: 2rem; }
+    h1 { font-size: 2.2rem; color: var(--accent); margin-bottom: 1.5rem; }
+    p { margin-bottom: 1.2rem; }
+
+    /* Спеціальні блоки для тексту (використовуйте у файлах теорії) */
+    .content-block { 
+      background: var(--card); 
+      border: 1px solid var(--border); 
+      padding: 2rem; 
+      border-radius: 24px; 
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    /* КАРТКИ ДЛЯ СТОРІНОК ВИБОРУ (Theory Index / Tests Index) */
+    .theory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .theory-card {
+      background: var(--card); border: 1px solid var(--border);
+      padding: 1.5rem; border-radius: 20px; text-decoration: none;
+      transition: 0.3s; display: block; color: var(--text);
+    }
+    .theory-card:hover { border-color: var(--accent); transform: translateY(-5px); }
+    .theory-card h3 { margin-top: 0; color: var(--accent); font-size: 1.2rem; }
+    .theory-card p { font-size: 0.85rem; color: #64748b; margin-bottom: 0; }
+
+    /* ТЕСТИ ТА КНОПКИ */
     .quiz-btn {
       display: block; width: 100%; text-align: left; padding: 1.1rem; margin-top: 0.8rem;
       background: var(--surface); border: 1px solid var(--border); color: var(--text);
@@ -63,7 +93,12 @@
     .incorrect { border-color: #ef4444 !important; background: rgba(239, 68, 68, 0.1) !important; color: #ef4444 !important; }
     .feedback { display: none; margin-top: 1rem; padding: 1rem; background: rgba(0, 212, 255, 0.03); border-left: 3px solid var(--accent); border-radius: 8px; font-size: 0.9rem; }
 
-    h1 { font-family: 'Syne', sans-serif; font-size: 2rem; color: var(--heading); margin-bottom: 1.5rem; }
+    /* СТИЛІ ДЛЯ ПРИКЛАДІВ (Examples) */
+    blockquote {
+      border-left: 4px solid var(--accent); background: rgba(0, 212, 255, 0.05);
+      padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 0 12px 12px 0;
+    }
+    pre { background: #000; padding: 1rem; border-radius: 10px; overflow-x: auto; border: 1px solid var(--border); color: #00ffcc; font-size: 0.9rem; }
   </style>
 </head>
 <body>
