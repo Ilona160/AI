@@ -8,78 +8,71 @@
   <style>
     :root {
       --bg: #0a0e1a; --surface: #111827; --card: #161d2e; --border: #1e2d45;
-      --accent: #00d4ff; --text: #e2e8f0; --muted: #64748b;
+      --accent: #00d4ff; --text: #e2e8f0; --heading: #f8fafc;
     }
+    
     body {
       font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text);
-      line-height: 1.6; padding: 100px 20px;
+      line-height: 1.6; padding: 120px 20px 60px; /* Відступ зверху для навігації */
       background-image: radial-gradient(circle at 2px 2px, var(--border) 1px, transparent 0);
       background-size: 40px 40px;
     }
-    .container { max-width: 800px; margin: 0 auto; }
-    
-    /* Стиль блоку з питанням */
-    .content-block {
-      background: var(--card); border: 1px solid var(--border);
-      padding: 2rem; border-radius: 20px; margin-bottom: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
 
-    /* Стиль кнопок-варіантів (виправляємо білі прямокутники) */
+    /* Навігаційна панель */
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%;
+      background: rgba(10, 14, 26, 0.8); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border); padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center; z-index: 1000;
+    }
+    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--accent); text-decoration: none; }
+    .nav-link { color: var(--text); text-decoration: none; font-size: 0.9rem; opacity: 0.8; transition: 0.3s; }
+    .nav-link:hover { opacity: 1; color: var(--accent); }
+
+    .container { max-width: 800px; margin: 0 auto; }
+
+    .content-block { background: var(--card); border: 1px solid var(--border); padding: 2.5rem; border-radius: 24px; margin-bottom: 2rem; }
+
     .quiz-btn {
-      display: block; width: 100%; text-align: left;
-      padding: 1rem 1.5rem; margin-top: 0.8rem;
-      background: var(--surface); border: 1px solid var(--border);
-      color: var(--text); border-radius: 12px;
-      cursor: pointer; font-size: 1rem; transition: all 0.3s ease;
+      display: block; width: 100%; text-align: left; padding: 1.2rem; margin-top: 1rem;
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      border-radius: 12px; cursor: pointer; transition: 0.3s;
     }
     .quiz-btn:hover { border-color: var(--accent); background: rgba(0, 212, 255, 0.05); }
 
-    /* Стани після натискання */
-    .correct { border-color: #10b981 !important; background: rgba(16, 185, 129, 0.15) !important; color: #10b981 !important; font-weight: 600; }
+    .correct { border-color: #10b981 !important; background: rgba(16, 185, 129, 0.15) !important; color: #10b981 !important; }
     .incorrect { border-color: #ef4444 !important; background: rgba(239, 68, 68, 0.15) !important; color: #ef4444 !important; }
     
-    .quiz-btn:disabled { cursor: default; }
-
-    h1 { font-family: 'Syne', sans-serif; color: var(--accent); margin-bottom: 2rem; }
+    .feedback { display: none; margin-top: 1rem; padding: 1rem; background: rgba(0, 212, 255, 0.05); border-left: 4px solid var(--accent); border-radius: 8px; font-size: 0.9rem; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="/" class="nav-logo">ШІ · ЛАБОРАТОРНА</a>
+    <a href="/" class="nav-link">← На головну</a>
+  </nav>
+
   <div class="container">
     {{ content }}
   </div>
 
- <script>
-  function check(btn, isCorrect, explanation) {
-    const parent = btn.parentElement;
-    const buttons = parent.querySelectorAll('.quiz-btn');
-    
-    // Блокуємо всі кнопки
-    buttons.forEach(b => {
-      b.style.pointerEvents = 'none';
-      b.style.opacity = '0.6';
-    });
-    
-    // Підсвічуємо вибрану кнопку
-    btn.style.opacity = '1';
-    if(isCorrect === true || isCorrect === ' some_string_true') {
-      btn.classList.add('correct');
-    } else {
-      btn.classList.add('incorrect');
-      // Якщо помилилися — підсвітимо правильну для наочності
-      buttons.forEach(b => {
-        // Тут ми шукаємо кнопку, у якої в onclick написано 'true'
-        if(b.getAttribute('onclick').includes('true')) b.classList.add('correct');
-      });
-    }
+  <script>
+    function check(btn, isCorrect, explanation) {
+      const parent = btn.parentElement;
+      const buttons = parent.querySelectorAll('.quiz-btn');
+      buttons.forEach(b => { b.style.pointerEvents = 'none'; b.style.opacity = '0.6'; });
+      
+      btn.style.opacity = '1';
+      if(isCorrect) {
+        btn.classList.add('correct');
+      } else {
+        btn.classList.add('incorrect');
+        buttons.forEach(b => { if(b.getAttribute('onclick').includes('true')) b.classList.add('correct'); b.style.opacity = '1'; });
+      }
 
-    // Показуємо пояснення
-    const feedback = parent.querySelector('.feedback');
-    if (feedback) {
-      feedback.innerHTML = explanation;
-      feedback.style.display = 'block';
+      const fb = parent.querySelector('.feedback');
+      if(fb) { fb.innerHTML = explanation; fb.style.display = 'block'; }
     }
-  }
   </script>
 </body>
 </html>
