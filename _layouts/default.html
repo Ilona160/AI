@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} · ШІ Курс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    /* Вставляємо ваші фірмові стилі */
+    :root {
+      --bg: #0a0e1a; --surface: #111827; --card: #161d2e; --border: #1e2d45;
+      --accent: #00d4ff; --accent2: #7c3aed; --text: #e2e8f0; --muted: #64748b; --heading: #f8fafc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-top: 80px; /* Місце для навігації */
+      /* Ефект сітки як у index.html */
+      background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(10, 14, 26, 0.85); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border); padding: 1rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--accent); text-decoration: none; }
+    h1, h2, h3 { font-family: 'Syne', sans-serif; color: var(--heading); margin-bottom: 1.5rem; }
+    h1 { font-size: 3rem; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    /* Стилі для Markdown-блоків */
+    .content-block { background: var(--card); border: 1px solid var(--border); padding: 2.5rem; border-radius: 24px; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="../index.html">ШІ · 10–11 КЛАС</a>
+    <a href="../index.html" style="color: var(--muted); text-decoration: none;">На головну</a>
+  </nav>
+
+  <div class="container">
+    {{ content }} </div>
+</body>
+</html>
