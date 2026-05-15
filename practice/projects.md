@@ -45,47 +45,96 @@ title: Проєктна робота з ШІ
 <a id="variant-a"></a>
 ## 📚 Варіант А — Навчальний матеріал
 
-<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.2); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>📖 Суть проєкту</h3>
-    <p>Створення повноцінного навчального контенту з будь-якої шкільної теми з використанням ШІ. Кінцевий продукт має бути готовим до використання учнями або вчителем.</p>
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    
+    <h3 style="color: #f8fafc; margin-bottom: 1rem;">📖 Суть та ідея проєкту</h3>
+    <p style="color: #e2e8f0; line-height: 1.6; margin-bottom: 2rem;">Ви створюєте повноцінний <strong>навчальний матеріал</strong> з будь-якої шкільної теми (не зі штучного інтелекту), використовуючи ШІ як розумного асистента. Кінцевий продукт має бути готовим до реального використання учнями або вчителем.</p>
 
-    <h4>🛠️ Формати на вибір:</h4>
-    <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0, 212, 255, 0.05);">
-                <th style="padding: 10px; text-align: left;">Формат</th>
-                <th style="padding: 10px; text-align: left;">Опис</th>
-                <th style="padding: 10px; text-align: left;">Мінімальний обсяг</th>
-            </tr>
-            <tr><td style="padding: 10px;"><strong>Навчальний сайт</strong></td><td style="padding: 10px;">HTML / Notion / Canva</td><td style="padding: 10px;">5 розділів</td></tr>
-            <tr><td style="padding: 10px;"><strong>Презентація</strong></td><td style="padding: 10px;">Canva / Google Slides</td><td style="padding: 10px;">15 слайдів</td></tr>
-            <tr><td style="padding: 10px;"><strong>Відео</strong></td><td style="padding: 10px;">HeyGen / Clipchamp</td><td style="padding: 10px;">4–6 хвилин</td></tr>
-            <tr><td style="padding: 10px;"><strong>Посібник</strong></td><td style="padding: 10px;">PDF / Google Docs</td><td style="padding: 10px;">800–1200 слів</td></tr>
-            <tr><td style="padding: 10px;"><strong>Квест/Гра</strong></td><td style="padding: 10px;">Genially / Google Forms</td><td style="padding: 10px;">10+ кроків</td></tr>
+    <h4 style="color: #f8fafc; margin-bottom: 1rem;">🛠️ Формати на вибір:</h4>
+    <div style="overflow-x: auto; margin-bottom: 2.5rem;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; color: #e2e8f0;">
+            <thead>
+                <tr style="border-bottom: 1px solid rgba(0, 212, 255, 0.5); background: rgba(0, 212, 255, 0.1);">
+                    <th style="padding: 12px; text-align: left;">Формат</th>
+                    <th style="padding: 12px; text-align: left;">Інструменти для роботи</th>
+                    <th style="padding: 12px; text-align: left;">Мін. обсяг</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Навчальний сайт</td>
+                    <td style="padding: 12px;">HTML / <a href="https://notion.so" target="_blank" style="color: var(--accent);">Notion</a> / <a href="https://www.canva.com/uk_ua/web-sayty/" target="_blank" style="color: var(--accent);">Canva Sites</a></td>
+                    <td style="padding: 12px;">5 розділів</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Презентація</td>
+                    <td style="padding: 12px;"><a href="https://www.canva.com/" target="_blank" style="color: var(--accent);">Canva</a> / <a href="https://gamma.app/" target="_blank" style="color: var(--accent);">Gamma App</a> / Google Slides</td>
+                    <td style="padding: 12px;">15 слайдів</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Відеоурок</td>
+                    <td style="padding: 12px;"><a href="https://heygen.com/" target="_blank" style="color: var(--accent);">HeyGen</a> / <a href="https://clipchamp.com/" target="_blank" style="color: var(--accent);">Clipchamp</a> / <a href="https://www.d-id.com/" target="_blank" style="color: var(--accent);">D-ID</a></td>
+                    <td style="padding: 12px;">4–6 хвилин</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Посібник</td>
+                    <td style="padding: 12px;"><a href="https://chatgpt.com/" target="_blank" style="color: var(--accent);">ChatGPT</a> / <a href="https://claude.ai/" target="_blank" style="color: var(--accent);">Claude</a> / PDF</td>
+                    <td style="padding: 12px;">800–1200 слів</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; font-weight: bold;">Квест / Гра</td>
+                    <td style="padding: 12px;"><a href="https://genially.com/" target="_blank" style="color: var(--accent);">Genially</a> / <a href="https://forms.google.com/" target="_blank" style="color: var(--accent);">Google Forms</a></td>
+                    <td style="padding: 12px;">10+ кроків</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
-    <h4>📌 Теми для вибору (Банк ідей):</h4>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8rem; margin: 15px 0;">
-        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-            <strong style="color: var(--accent);">🧪 Природничі:</strong><br>
-            • Чому небо блакитне? | • Принцип роботи сонячних панелей<br>
-            • Як ДНК зберігає інформацію? | • Хімія мила
+    <h4 style="color: #f8fafc; margin-bottom: 1rem;">📌 Теми для вибору (Банк ідей):</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.95rem; color: #e2e8f0; margin-bottom: 2.5rem;">
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+            <strong style="color: var(--accent3);">🧪 Природничі:</strong>
+            <ul style="list-style: none; padding: 0; margin: 10px 0 0 0;">
+                <li>• Чому небо блакитне?</li>
+                <li>• Принцип роботи сонячних панелей</li>
+                <li>• Як ДНК зберігає інформацію?</li>
+                <li>• Як працює мило на молекулах?</li>
+            </ul>
         </div>
-        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-            <strong style="color: var(--accent3);">📐 Гуманітарні/Точні:</strong><br>
-            • Теорія ймовірностей у житті | • Козацька держава<br>
-            • Риторичні прийоми переконання | • Шістдесятники
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+            <strong style="color: var(--accent);">📐 Гуманітарні/Точні:</strong>
+            <ul style="list-style: none; padding: 0; margin: 10px 0 0 0;">
+                <li>• Теорія ймовірностей у житті</li>
+                <li>• Козацька держава: функціонування</li>
+                <li>• Риторичні прийоми переконання</li>
+                <li>• Шістдесятники: хто і навіщо?</li>
+            </ul>
         </div>
     </div>
 
-    <h4>🤖 Промпти для Варіанта А:</h4>
-    <p style="font-size: 0.75rem; color: #10b981; margin-bottom: 5px;"># ГЕНЕРАЦІЯ ТЕСТУ:</p>
-    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
-Створи тест з 5 запитань на тему "[назва]" для 10 класу. 
-Розподіл: 2 вибори відповіді, 1 правда/неправда, 1 відкрите питання, 
-1 задача. Додай правильні відповіді та пояснення.
-    </pre>
+    <h4 style="color: #f8fafc; margin-bottom: 1.5rem;">🤖 Рекомендовані промпти для Варіанта А:</h4>
+
+    <div style="margin-bottom: 1.5rem;">
+        <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Генерація тесту</p>
+        <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Створи тест з 5 запитань на тему "[назва]" для 10 класу. Розподіл: 2 вибори відповіді, 1 правда/неправда з поясненням, 1 відкрите питання (2-3 речення), 1 задача або практичне застосування. Додай правильні відповіді та пояснення.</pre>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+        <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Запит для зображення (Midjourney / DALL-E)</p>
+        <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Educational illustration for [topic], clear and informative, suitable for high school students, [specific visual element you need], clean design, [color scheme], digital art style, 16:9 format, high detail.</pre>
+        </div>
+    </div>
+
+    <div>
+        <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Пояснення теми (Few-shot)</p>
+        <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Дій як досвідчений вчитель. Поясни тему "[назва]" для учнів 10 класу, які вперше з нею стикаються. Використай аналогію, зрозумілу підліткам. Обсяг — 300 слів. Без складних формул.</pre>
+        </div>
+    </div>
+
 </div>
 
 ---
