@@ -2,6 +2,18 @@
 layout: default
 title: Проєктна робота з ШІ
 ---
+# 🚀 Фінальна проєктна робота
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.3); padding: 1.5rem; border-radius: 20px; margin-bottom: 2rem;">
+    <strong>🎓 Загальна інформація:</strong> Фінальний проєкт — це підсумкова робота, що демонструє все, чого ви навчились. Виконується протягом уроків 16–18.
+    <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <span class="lesson-chip" style="background: rgba(0, 212, 255, 0.1); color: var(--accent);">📅 Планування: Урок 16</span>
+        <span class="lesson-chip" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">🎤 Захист: Уроки 17–18</span>
+        <span class="lesson-chip" style="background: rgba(255, 255, 255, 0.1); color: #fff;">🏆 Максимум: 100 балів</span>
+    </div>
+</div>
+
+---
 
 ## 📑 Зміст
 
