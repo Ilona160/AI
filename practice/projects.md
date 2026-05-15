@@ -3,40 +3,45 @@ layout: default
 title: Проєктна робота з ШІ
 ---
 
-# 🚀 Фінальна проєктна робота
-
-<div class="content-block" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.3); padding: 1.5rem; border-radius: 20px; margin-bottom: 2rem;">
-    <strong>🎓 Загальна інформація:</strong> Фінальний проєкт — це підсумкова робота, що демонструє все, чого ви навчились. Виконується протягом уроків 16–18.
-    <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
-        <span class="lesson-chip" style="background: rgba(0, 212, 255, 0.1); color: var(--accent);">📅 Планування: Урок 16</span>
-        <span class="lesson-chip" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">🎤 Захист: Уроки 17–18</span>
-        <span class="lesson-chip" style="background: rgba(255, 255, 255, 0.1); color: #fff;">🏆 Максимум: 100 балів</span>
-    </div>
-</div>
-
----
-
 ## 📑 Зміст
-1. [🧭 Як обрати варіант](#how-to-choose)
-2. [📚 Варіант А — Навчальний матеріал](#variant-a)
-3. [🔍 Варіант Б — Дослідження](#variant-b)
-4. [🎨 Варіант В — Творчий продукт](#variant-c)
-5. [📊 Варіант Г — Порівняльний аналіз](#variant-d)
-6. [📋 Вимоги та Критерії](#common-requirements)
-7. [🗓️ Графік і дедлайни](#schedule)
 
----
-
-<a id="how-to-choose"></a>
-## 🧭 Як обрати варіант?
-
-<div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 20px;">
-    <p>Відповідайте чесно на питання:</p>
-    <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 10px;">1️⃣ Мені подобається пояснювати іншим і ділитися знаннями? → <strong>Варіант А або Б</strong></li>
-        <li style="margin-bottom: 10px;">2️⃣ Я творча людина і хочу зробити щось візуальне? → <strong>Варіант В</strong></li>
-        <li style="margin-bottom: 10px;">3️⃣ Мені цікаво аналізувати і знаходити різницю? → <strong>Варіант Г</strong></li>
-        <li style="margin-bottom: 10px;">4️⃣ Я хочу глибоко дослідити конкретну сферу? → <strong>Варіант Б</strong></li>
+<div class="content-block" style="background: rgba(0, 242, 255, 0.03); border: 1px solid rgba(0, 242, 255, 0.2); padding: 1.5rem; border-radius: 20px;">
+    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="margin-bottom: 8px;">
+            <a href="#how-to-choose" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">🧭</span> 1. Як обрати варіант
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#variant-a" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">📚</span> 2. Варіант А — Навчальний матеріал
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#variant-b" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">🔍</span> 3. Варіант Б — Дослідження
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#variant-c" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">🎨</span> 4. Варіант В — Творчий продукт
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#variant-d" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">📊</span> 5. Варіант Г — Порівняльний аналіз
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#common-requirements" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">📋</span> 6. Вимоги та Критерії
+            </a>
+        </li>
+        <li>
+            <a href="#schedule" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.2rem;">🗓️</span> 7. Графік і дедлайни
+            </a>
+        </li>
     </ul>
 </div>
 
