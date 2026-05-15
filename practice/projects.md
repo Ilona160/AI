@@ -166,7 +166,7 @@ clean design, [color scheme], digital art style, 16:9, high detail.
         </div>
         <div class="theory-card" style="margin:0; padding: 15px; border-top: 2px solid #10b981;">
             <h4>🖼️ Комікс (8-12 стор)</h4>
-            <p style="font-size: 0.8rem;">Сюжет + персонажі. Графіка через <a href="https://canva.com" target="_blank" style="color: #10b981;">Canva AI</a> або вручну.</p>
+            <p style="font-size: 0.8rem;">Сюжет + персонажі. Графіка через <a href="https://canva.com" target="_blank" style="color: #10b981;">Canva Magic</a> або вручну.</p>
         </div>
         <div class="theory-card" style="margin:0; padding: 15px; border-top: 2px solid #10b981;">
             <h4>🎮 Гра/Квест (15+ кр)</h4>
@@ -180,18 +180,61 @@ clean design, [color scheme], digital art style, 16:9, high detail.
 <a id="variant-d"></a>
 ## 📊 Варіант Г — Порівняльний аналіз
 
-<div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>📊 Битва титанів ШІ</h3>
-    <p>Порівняння 3+ інструментів за власною системою критеріїв (Benchmark).</p>
-    
-    <ul style="font-size: 0.85rem;">
-        <li>• <strong>Текстові:</strong> ChatGPT vs <a href="https://claude.ai" target="_blank" style="color: #f59e0b;">Claude</a> vs <a href="https://gemini.google.com" target="_blank" style="color: #f59e0b;">Gemini</a>.</li>
-        <li>• <strong>Зображення:</strong> Midjourney vs Firefly vs DALL-E 3.</li>
-        <li>• <strong>Освітні:</strong> Khanmigo vs Duolingo Max.</li>
-    </ul>
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>📖 Суть та ідея</h3>
+    <p>Ви проводите детальне порівняння трьох або більше ШІ-інструментів за власно розробленою системою критеріїв. Кінцевий продукт — аналітичний огляд з чіткими висновками і рекомендаціями. Це навичка, яка допоможе вам обирати найкращі інструменти для роботи.</p>
 
-    <div style="background: rgba(245, 158, 11, 0.05); padding: 1rem; border-radius: 12px; margin-top: 15px; border-left: 4px solid #f59e0b;">
-        <strong>📈 Обов'язково:</strong> Зведена таблиця з ваговими коефіцієнтами (Точність, Швидкість, UX, Укр. мова).
+    <h4>🛠️ Типи порівнянь на вибір:</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.85rem; margin-bottom: 20px;">
+        <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 12px; border-top: 2px solid #f59e0b;">
+            <strong>💬 Г-1: Текстові LLM</strong><br>
+            ChatGPT (GPT-4o) vs Claude 3 vs Gemini 1.5. Фокус: навчання, код, аналіз текстів.
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 12px; border-top: 2px solid #f59e0b;">
+            <strong>🖼️ Г-2: Генератори зображень</strong><br>
+            DALL-E 3 vs Canva AI vs Adobe Firefly vs Midjourney. Фокус: ілюстрації, дизайн.
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 12px; border-top: 2px solid #f59e0b;">
+            <strong>🎓 Г-3: Освітні платформи</strong><br>
+            Khanmigo vs Duolingo Max vs Quizlet AI. Фокус: мови, математика, тести.
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 12px; border-radius: 12px; border-top: 2px solid #f59e0b;">
+            <strong>🎯 Г-4: Нішеві інструменти</strong><br>
+            Кодинг (Copilot), Відео (Runway), Пошук (Perplexity vs Bing).
+        </div>
+    </div>
+
+    <h4>📄 Структура звіту:</h4>
+    <div style="font-size: 0.85rem; line-height: 1.6; color: var(--text);">
+        • <strong>Розділ 1. Вступ (200 слів):</strong> Задача, цільова аудиторія, методологія та обмеження.<br>
+        • <strong>Розділ 2. Профіль інструментів (150 слів на кожен):</strong> Розробник, модель, ціна, обіцяні переваги.<br>
+        • <strong>Розділ 3. Порівняльні тести:</strong> Мінімум 5 критеріїв за шаблоном нижче.<br>
+        • <strong>Розділ 4. Зведена таблиця:</strong> Оцінки з ваговими коефіцієнтами.<br>
+        • <strong>Розділ 5. Висновки (200 слів):</strong> Рекомендації за сценаріями ("Для коду", "Для ЗНО").
+    </div>
+
+    <h4 style="margin-top: 20px;">🤖 Шаблон критерію для розділу 3:</h4>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Критерій: [Назва] | Що вимірюємо: [Показник]
+Як тестували: [Опис методу]
+Результати: 
+  Інстр. А: [Оцінка + Чому] | Інстр. Б: [...]
+Переможець: [Хто і чому]
+    </pre>
+
+    <h4 style="margin-top: 20px;">📊 Критерії тестування (оберіть 5+):</h4>
+    <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0, 212, 255, 0.05);">
+                <th style="padding: 8px; text-align: left;">Критерій</th>
+                <th style="padding: 8px; text-align: left;">Як тестувати</th>
+            </tr>
+            <tr><td style="padding: 8px;"><strong>Точність фактів</strong></td><td style="padding: 8px;">Задати 10 перевірених фактичних питань.</td></tr>
+            <tr><td style="padding: 8px;"><strong>Якість пояснень</strong></td><td style="padding: 8px;">Попросити пояснити концепт, оцінити 5 експертами.</td></tr>
+            <tr><td style="padding: 8px;"><strong>Інструкції</strong></td><td style="padding: 8px;">Задати промпт з 7 вимогами, рахувати виконані.</td></tr>
+            <tr><td style="padding: 8px;"><strong>Українська мова</strong></td><td style="padding: 8px;">Порівняти якість відповідей укр. vs англ.</td></tr>
+            <tr><td style="padding: 8px;"><strong>UX / Швидкість</strong></td><td style="padding: 8px;">Зручність інтерфейсу та час генерації.</td></tr>
+        </table>
     </div>
 </div>
 
