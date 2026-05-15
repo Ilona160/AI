@@ -59,6 +59,22 @@ title: Проєктна робота з ШІ
 
 ---
 
+<a id="how-to-choose"></a>
+## 🧭 Як обрати варіант?
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 20px;">
+    <p>Відповідайте чесно на питання:</p>
+    <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 10px;">1️⃣ Мені подобається пояснювати іншим і ділитися знаннями? → <strong>Варіант А або Б</strong></li>
+        <li style="margin-bottom: 10px;">2️⃣ Я творча людина і хочу зробити щось візуальне? → <strong>Варіант В</strong></li>
+        <li style="margin-bottom: 10px;">3️⃣ Мені цікаво аналізувати і знаходити різницю? → <strong>Варіант Г</strong></li>
+        <li style="margin-bottom: 10px;">4️⃣ Я хочу глибоко дослідити конкретну сферу? → <strong>Варіант Б</strong></li>
+    </ul>
+</div>
+
+---
+
+
 <a id="variant-a"></a>
 ## 📚 Варіант А — Навчальний матеріал
 
