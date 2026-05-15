@@ -304,6 +304,63 @@ title: Проєктна робота з ШІ
 
 ---
 
+<a id="common-requirements"></a>
+## 📋 Вимоги та Критерії оцінювання
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>📈 Критерії оцінювання (макс. 100 балів)</h3>
+    <div style="overflow-x: auto; margin-top: 1.5rem;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; color: #fff;">
+            <thead>
+                <tr style="border-bottom: 2px solid rgba(0, 212, 255, 0.5); background: rgba(0, 212, 255, 0.1);">
+                    <th style="padding: 12px; text-align: left;">Критерій</th>
+                    <th style="padding: 12px; text-align: center;">Бали</th>
+                    <th style="padding: 12px; text-align: left;">Що оцінюємо</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Планування</td>
+                    <td style="padding: 12px; text-align: center; color: var(--accent);">15</td>
+                    <td style="padding: 12px;">Наявність заповненої картки проєкту, чітка мета та логіка структури.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Контент</td>
+                    <td style="padding: 12px; text-align: center; color: var(--accent);">30</td>
+                    <td style="padding: 12px;">Технічна точність інформації, перевірені факти, наявність посилань на джерела.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">ШІ-майстерність</td>
+                    <td style="padding: 12px; text-align: center; color: var(--accent);">20</td>
+                    <td style="padding: 12px;">Складність використаних промптів, залучення 2+ різних ШІ-інструментів.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <td style="padding: 12px; font-weight: bold;">Власний внесок</td>
+                    <td style="padding: 12px; text-align: center; color: var(--accent);">20</td>
+                    <td style="padding: 12px;">Глибоке редагування ШІ-тексту, авторський дизайн, унікальність продукту.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; font-weight: bold;">Захист</td>
+                    <td style="padding: 12px; text-align: center; color: var(--accent);">15</td>
+                    <td style="padding: 12px;">Якість публічного виступу, впевнені відповіді на Q&A сесії.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+---
+
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.02); border: 1px dashed var(--accent); padding: 2rem; border-radius: 24px;">
+    <h4>📦 Обов'язкова супровідна документація:</h4>
+    <ul style="font-size: 0.85rem; list-style: none; padding: 0;">
+        <li style="margin-bottom: 10px;">🔹 <strong>Список інструментів:</strong> Назва сервісу та яку саме роль він виконував.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Архів промптів:</strong> Мінімум 3 приклади складних запитів, які ви створювали.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Фактчекінг:</strong> Перелік з 5 основних фактів проєкту, які були підтверджені вручну.</li>
+    </ul>
+</div>
+
 <div style="text-align: center; margin-top: 3rem;">
     <a href="https://ilona160.github.io/AI/practice/index.html" class="nav-link">← Назад до вибору практики</a>
 </div>
