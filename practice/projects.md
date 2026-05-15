@@ -122,59 +122,41 @@ title: Проєктна робота з ШІ
 
 <div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(16, 185, 129, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
     <h3>🎨 Мистецтво та сторителінг через ШІ</h3>
-    <p>Ви створюєте творчий мультимедійний продукт, що розкриває аспект ШІ через мистецтво, гру або нестандартний формат.</p>
-</div>
+    <p style="margin-bottom: 2rem;">Ви створюєте продукт, що розкриває аспект ШІ через гру, комікс або аудіо. Це має бути технічно точно, але творчо.</p>
 
-<div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>🛠️ Формати на вибір</h3>
-    
-    <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
-        <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 16px; border-left: 4px solid #10b981;">
-            <strong style="color: #10b981;">🖼️ Формат В-1: Комікс або графічна новела</strong><br>
-            <p style="font-size: 0.85rem; margin-top: 5px;">
-            <strong>Обсяг:</strong> 8–12 сторінок (мінімум 4 панелі на сторінку).<br>
-            <strong>Вимоги:</strong> Персонажі та сюжет; технічно точна інформація про ШІ; ілюстрації вручну або Canva AI; діалоги та пояснення.
-            </p>
+    <div class="theory-grid">
+        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+            <h4 style="display: flex; align-items: center; gap: 10px;">🎙️ Подкаст (8–12 хв)</h4>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 10px;">Сценарій, звукова якість, музика від <a href="https://suno.com" target="_blank" style="color: #10b981;">Suno</a>. Мінімум 2 рубрики.</p>
         </div>
-        <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 16px; border-left: 4px solid #10b981;">
-            <strong style="color: #10b981;">🎙️ Формат В-2: Подкаст або аудіопрограма</strong><br>
-            <p style="font-size: 0.85rem; margin-top: 5px;">
-            <strong>Тривалість:</strong> 8–12 хвилин.<br>
-            <strong>Вимоги:</strong> Структура (вступ, основа, висновок); написаний сценарій; чистий звук; мін. 2 рубрики; фонова музика (Suno/Udio).
-            </p>
+        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+            <h4 style="display: flex; align-items: center; gap: 10px;">🖼️ Комікс (8–12 стор)</h4>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 10px;">Сюжет + персонажі. Графіка через <a href="https://canva.com" target="_blank" style="color: #10b981;">Canva AI</a> або вручну.</p>
         </div>
-        <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 16px; border-left: 4px solid #10b981;">
-            <strong style="color: #10b981;">📹 Формат В-3: Документальне відео</strong><br>
-            <p style="font-size: 0.85rem; margin-top: 5px;">
-            <strong>Тривалість:</strong> 5–8 хвилин.<br>
-            <strong>Вимоги:</strong> Проблема → контекст → різні думки → висновок; візуальний ряд (скрінкасти, ШІ-зображення); закадровий текст; джерела.
-            </p>
-        </div>
-        <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 16px; border-left: 4px solid #10b981;">
-            <strong style="color: #10b981;">🎮 Формат В-4: Інтерактивна гра або квест</strong><br>
-            <p style="font-size: 0.85rem; margin-top: 5px;">
-            <strong>Обсяг:</strong> мінімум 15 «кроків» або «екранів».<br>
-            <strong>Вимоги:</strong> Вибори з наслідками; навчальний зміст; фінальний результат; протестовано на 2+ людях.
-            </p>
-        </div>
-        <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 16px; border-left: 4px solid #10b981;">
-            <strong style="color: #10b981;">📖 Формат В-5: Зін (zine) — міні-журнал</strong><br>
-            <p style="font-size: 0.85rem; margin-top: 5px;">
-            <strong>Обсяг:</strong> 8–16 сторінок А5.<br>
-            <strong>Вимоги:</strong> Текст + зображення (мін. 50% візуалу); авторський голос; мінімум один матеріал із особистим досвідом.
-            </p>
+        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+            <h4 style="display: flex; align-items: center; gap: 10px;">🎮 Гра/Квест (15+ кр)</h4>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 10px;">Навчальна механіка. Інструменти: <a href="https://genially.com" target="_blank" style="color: #10b981;">Genially</a> або Twine.</p>
         </div>
     </div>
 </div>
 
-<div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(16, 185, 129, 0.5); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>✅ Обов’язкові елементи для ВСІХ творчих форматів</h3>
+<div class="content-block" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>📝 Специфікації форматів</h3>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; font-size: 0.85rem; line-height: 1.6;">
+        <p><strong>🎥 Формат В-3: Документальне відео.</strong> Тривалість 5–8 хв. Обов'язкова структура: проблема → контекст → різні думки → висновок. Джерела вказуються в титрах.</p>
+        <p><strong>📖 Формат В-5: Зін (zine) — міні-журнал.</strong> 8–16 сторінок А5. Поєднання тексту і зображень (мін. 50% візуалу), авторський голос та особистий досвід.</p>
+        <p><strong>🎭 Комікс/Новела:</strong> Мінімум 4 панелі на сторінку. Текст має містити діалоги та пояснювальні вставки.</p>
+    </div>
+</div>
+
+<div class="content-block" style="background: rgba(16, 185, 129, 0.03); border: 1px solid rgba(16, 185, 129, 0.4); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>✅ Обов’язкові елементи (Check-list)</h3>
     <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
-        <li style="margin-bottom: 8px;">🔹 <strong>Змістовність:</strong> глядач/читач дізнається щось реальне про ШІ.</li>
-        <li style="margin-bottom: 8px;">🔹 <strong>Точність:</strong> факти перевірені, немає дезінформації.</li>
-        <li style="margin-bottom: 8px;">🔹 <strong>Використання ШІ:</strong> залучено мінімум 2 ШІ-інструменти.</li>
-        <li style="margin-bottom: 8px;">🔹 <strong>Атрибуція:</strong> чітко зазначено розподіл роботи людина/ШІ.</li>
-        <li style="margin-bottom: 8px;">🔹 <strong>Документація:</strong> 1 сторінка опису процесу (промпти, інструменти, труднощі).</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Змістовність:</strong> глядач/гравець має дізнатися реальні факти про роботу ШІ.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Точність:</strong> відсутність дезінформації, перевірка фактів через джерела.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Використання ШІ:</strong> залучено мінімум 2 ШІ-інструменти для створення продукту.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Атрибуція:</strong> чітко розмежовано: "Це згенеровано ШІ, а це написано мною".</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Документація:</strong> 1 сторінка опису процесу (які промпти спрацювали, а які — ні).</li>
     </ul>
 </div>
 
@@ -184,25 +166,23 @@ title: Проєктна робота з ШІ
     <p style="font-size: 0.75rem; color: #10b981; margin-bottom: 5px;"># ДЛЯ СЦЕНАРІЮ КОМІКСУ:</p>
     <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
 Напиши сценарій для 3 сторінок коміксу про [тема]. 
-Персонажі: [опишіть]. Формат: 
-СТОРІНКА [N], Панель 1: [зображення] | Текст: [діалог]. 
+Персонажі: [опишіть]. Формат для кожної сторінки: 
+СТОРІНКА [N], Панель 1: [що зображено] | Текст: [діалог]. 
 Вимоги: конфлікт у поч., пояснення ШІ через дії, розв'язка.
     </pre>
 
-    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ДЛЯ СЦЕНАРІЮ ПОДКАСТУ:</p>
+    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ДЛЯ ВСТУПУ ДО ПОДКАСТУ:</p>
     <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
 Напиши сценарій 2-хвилинного вступу до подкасту на тему "[назва]". 
-Тон: [розмовний / серйозний]. Аудиторія: 15–17 років. 
-Почни з "гука", додай обіцянку "У цьому випуску ти дізнаєшся...". 
-Обсяг: 250-280 слів.
+Тон: розмовний, аудиторія: 15–17 років. Почни з "гука" (цікавий факт). 
+Є обіцянка: "У цьому випуску ти дізнаєшся...". Обсяг: 250 слів.
     </pre>
 
     <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ДЛЯ МЕХАНІКИ ГРИ:</p>
     <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
-Розроби механіку квесту на тему "[концепт ШІ]" для 10 класу. 
+Розроби механіку квесту на тему "[концепт ШІ]" для учнів 10 класу. 
 Роль гравця: [персонаж]. Мета: [ціль]. 
-Придумай: 3 розгалуження (А або В) з логічними наслідками 
-та фінальний результат навчання.
+Придумай 3 розгалуження (А або В) з логічними наслідками.
     </pre>
 </div>
 
