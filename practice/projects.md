@@ -93,20 +93,20 @@ title: Проєктна робота з ШІ
 <a id="variant-b"></a>
 ## 🔍 Варіант Б — Дослідження
 
-<div class="content-block" style="background: transparent; padding: 1rem 0; margin-bottom: 2rem;">
-    <p style="font-size: 1.1rem; color: #e2e8f0;">Ви проводите глибокий аналіз конкретної сфери. Дослідження — це не реферат, а пошук відповідей на складні питання.</p>
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    
+    <h3 style="color: #f8fafc; margin-bottom: 1rem;">🔬 Аналітичне дослідження сфери ШІ</h3>
+    <p style="color: #e2e8f0; line-height: 1.6; margin-bottom: 2rem;">Ви проводите глибокий аналіз конкретної сфери. Дослідження — це не реферат, а пошук відповідей на складні питання.</p>
 
-    <h3 style="display: flex; align-items: center; gap: 10px; margin-top: 2rem; color: #f8fafc;">
-        📂 Теми для дослідження:
-    </h3>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 1rem; color: #e2e8f0; margin-top: 1rem;">
-        <ul style="list-style: none; padding: 0;">
+    <h4 style="color: #f8fafc; margin-bottom: 1rem;">📂 Теми для дослідження:</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.95rem; color: #e2e8f0; margin-bottom: 2.5rem;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
             <li style="margin-bottom: 8px;">• ШІ в медицині: діагностика та ліки</li>
             <li style="margin-bottom: 8px;">• ШІ в освіті: персоналізація</li>
             <li style="margin-bottom: 8px;">• ШІ в правосудді: етика вироків</li>
             <li style="margin-bottom: 8px;">• Дипфейки: загроза дезінформації</li>
         </ul>
-        <ul style="list-style: none; padding: 0;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
             <li style="margin-bottom: 8px;">• Цифрова нерівність та ШІ</li>
             <li style="margin-bottom: 8px;">• ШІ та безробіття в Україні</li>
             <li style="margin-bottom: 8px;">• Чому ШІ галюцинує?</li>
@@ -114,10 +114,8 @@ title: Проєктна робота з ШІ
         </ul>
     </div>
 
-    <h3 style="display: flex; align-items: center; gap: 10px; margin-top: 2.5rem; color: #f8fafc;">
-        📄 Обов'язкова структура дослідження:
-    </h3>
-    <div style="background: rgba(124, 58, 237, 0.08); border-left: 4px solid #7c3aed; padding: 1.5rem; border-radius: 12px; margin-top: 1.5rem; color: #e2e8f0; line-height: 1.8;">
+    <h4 style="color: #f8fafc; margin-bottom: 1rem;">📄 Обов'язкова структура дослідження:</h4>
+    <div style="background: rgba(124, 58, 237, 0.1); border-left: 4px solid #a855f7; padding: 1.5rem; border-radius: 12px; margin-bottom: 2.5rem; color: #e2e8f0; font-size: 0.9rem; line-height: 1.8;">
         <p><strong>1. ВСТУП (150–200 слів):</strong> Важливість теми, дослідницьке питання, гіпотеза.</p>
         <p><strong>2. МЕТОДОЛОГІЯ (100–150 слів):</strong> Які ШІ та джерела використовували, як перевіряли факти.</p>
         <p><strong>3. ОСНОВНА ЧАСТИНА (600–800 слів):</strong> Стан речей сьогодні, 2-3 реальні кейси, переваги та ризики, різні точки зору.</p>
@@ -125,36 +123,29 @@ title: Проєктна робота з ШІ
         <p><strong>5. ВИСНОВКИ ТА ДЖЕРЕЛА:</strong> 3-4 тези, рекомендації, список джерел (мін. 2 не-ШІ).</p>
     </div>
 
-    <h3 style="display: flex; align-items: center; gap: 10px; margin-top: 3rem; color: #f8fafc;">
-        🤖 Рекомендовані промпти для Варіанта Б:
-    </h3>
+    <h4 style="color: #f8fafc; margin-bottom: 1.5rem;">🤖 Рекомендовані промпти для Варіанта Б:</h4>
 
-    <p style="font-size: 0.9rem; color: #10b981; margin-top: 1.5rem; font-weight: bold;"># ГЕНЕРАЦІЯ ОГЛЯДУ ТЕМИ:</p>
-    <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(16, 185, 129, 0.03); margin-top: 0.5rem;">
-        <pre style="background: transparent; border: none; color: #10b981; font-family: monospace; font-size: 0.95rem; white-space: pre-wrap; margin: 0;">
-Дій як науковий аналітик. Дай структурований огляд теми 
-"[ваша тема]" станом на 2024 рік. Включи: 3 реальні кейси 
-з назвами компаній, 3 переваги, 3 ризики та 2 суперечливі питання. 
-Вкажи, де твої знання можуть бути застарілими.</pre>
+    <div style="margin-bottom: 1.5rem;">
+        <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Генерація огляду теми</p>
+        <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Дій як науковий аналітик. Дай структурований огляд теми "[ваша тема]" станом на 2024 рік. Включи: 3 реальні кейси з назвами компаній, 3 переваги, 3 ризики та 2 суперечливі питання. Вкажи, де твої знання можуть бути застарілими.</pre>
+        </div>
     </div>
 
-    <p style="font-size: 0.9rem; color: #10b981; margin-top: 1.5rem; font-weight: bold;"># ПОШУК РІЗНИХ ТОЧОК ЗОРУ:</p>
-    <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(16, 185, 129, 0.03); margin-top: 0.5rem;">
-        <pre style="background: transparent; border: none; color: #10b981; font-family: monospace; font-size: 0.95rem; white-space: pre-wrap; margin: 0;">
-Наведи аргументи 3-х різних сторін щодо "[ваша тема]": 
-1. Оптиміст (хто виграє), 2. Скептик (хто має заперечення), 
-3. Прагматик (баланс ризиків). Для кожної: 2-3 конкретні аргументи. 
-Не обирай сторону — просто представ позиції.</pre>
+    <div style="margin-bottom: 1.5rem;">
+        <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Пошук різних точок зору</p>
+        <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Наведи аргументи 3-х сторін щодо "[ваша тема]": 1. Оптиміст (переваги), 2. Скептик (заперечення), 3. Прагматик (баланс). Для кожної: 2-3 конкретні аргументи.</pre>
+        </div>
     </div>
 
-    <p style="font-size: 0.9rem; color: #10b981; margin-top: 1.5rem; font-weight: bold;"># ПЕРЕВІРКА ВЛАСНОГО АНАЛІЗУ (КРИТИКА):</p>
-    <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(16, 185, 129, 0.03); margin-top: 0.5rem;">
-        <pre style="background: transparent; border: none; color: #10b981; font-family: monospace; font-size: 0.95rem; white-space: pre-wrap; margin: 0;">
-Я дійшов такого висновку у своєму дослідженні: [ваш текст]. 
-Знайди слабкі місця в моєму аргументі, факти, які я міг пропустити, 
-та запропонуй альтернативний висновок, підкріплений даними. 
-Будь конкретним і критичним.</pre>
+    <div>
+        <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Перевірка власного аналізу</p>
+        <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Я дійшов такого висновку: [ваш текст]. Знайди слабкі місця, перспективи, які я пропустив, та альтернативний висновок.</pre>
+        </div>
     </div>
+
 </div>
 
 ---
