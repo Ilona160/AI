@@ -115,12 +115,32 @@ title: Проєктна робота з ШІ
     </div>
 
     <h4 style="color: #f8fafc; margin-bottom: 1rem;">📄 Обов'язкова структура дослідження:</h4>
-    <div style="background: rgba(124, 58, 237, 0.1); border-left: 4px solid #a855f7; padding: 1.5rem; border-radius: 12px; margin-bottom: 2.5rem; color: #e2e8f0; font-size: 0.9rem; line-height: 1.8;">
-        <p><strong>1. ВСТУП (150–200 слів):</strong> Важливість теми, дослідницьке питання, гіпотеза.</p>
-        <p><strong>2. МЕТОДОЛОГІЯ (100–150 слів):</strong> Які ШІ та джерела використовували, як перевіряли факти.</p>
-        <p><strong>3. ОСНОВНА ЧАСТИНА (600–800 слів):</strong> Стан речей сьогодні, 2-3 реальні кейси, переваги та ризики, різні точки зору.</p>
-        <p><strong>4. ВЛАСНИЙ АНАЛІЗ (200–250 слів):</strong> Чи підтвердилась гіпотеза? Що здивувало?</p>
-        <p><strong>5. ВИСНОВКИ ТА ДЖЕРЕЛА:</strong> 3-4 тези, рекомендації, список джерел (мін. 2 не-ШІ).</p>
+    <div style="background: rgba(124, 58, 237, 0.1); border-left: 4px solid #a855f7; padding: 1.5rem; border-radius: 12px; margin-bottom: 2.5rem; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
+        
+        <p style="margin-bottom: 15px;"><strong>1. ВСТУП (150–200 слів):</strong><br>
+        Чому ця тема важлива зараз; дослідницьке питання; ваша гіпотеза до початку дослідження.</p>
+        
+        <p style="margin-bottom: 15px;"><strong>2. МЕТОДОЛОГІЯ (100–150 слів):</strong><br>
+        Які джерела використовували (ШІ, відкриті дані, статті); як перевіряли достовірність інформації; обмеження вашого дослідження.</p>
+        
+        <div style="margin-bottom: 15px;">
+            <strong>3. ОСНОВНА ЧАСТИНА (600–800 слів):</strong>
+            <ul style="list-style: none; padding-left: 15px; margin-top: 5px;">
+                <li>• <em>Розділ 3.1. Стан речей сьогодні:</em> Що вже відбувається; 2–3 реальні кейси з деталями.</li>
+                <li>• <em>Розділ 3.2. Переваги та можливості:</em> Конкретні приклади (не загальні слова).</li>
+                <li>• <em>Розділ 3.3. Ризики та проблеми:</em> Конкретні приклади (в т.ч. неочевидні).</li>
+                <li>• <em>Розділ 3.4. Різні точки зору:</em> Хто підтримує? Хто проти? Чому?</li>
+            </ul>
+        </div>
+
+        <p style="margin-bottom: 15px;"><strong>4. ВЛАСНИЙ АНАЛІЗ (200–250 слів):</strong><br>
+        Ваша відповідь на питання; чи підтвердилась гіпотеза; що вас здивувало найбільше.</p>
+
+        <p style="margin-bottom: 15px;"><strong>5. ВИСНОВКИ І РЕКОМЕНДАЦІЇ (150 слів):</strong><br>
+        3–4 конкретні висновки; рекомендації для учнів, вчителів чи розробників.</p>
+
+        <p style="margin-bottom: 0;"><strong>6. ДЖЕРЕЛА:</strong><br>
+        Мінімум 5 джерел (мін. 2 не від ШІ). Обов'язково вказати, як саме ви використовували ШІ.</p>
     </div>
 
     <h4 style="color: #f8fafc; margin-bottom: 1.5rem;">🤖 Рекомендовані промпти для Варіанта Б:</h4>
@@ -142,12 +162,11 @@ title: Проєктна робота з ШІ
     <div>
         <p style="font-size: 0.8rem; color: #10b981; font-weight: bold; margin-bottom: 8px; text-transform: uppercase;"># Перевірка власного аналізу</p>
         <div style="border: 1px solid #10b981; border-radius: 12px; padding: 1.25rem; background: rgba(0, 0, 0, 0.3);">
-            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Я дійшов такого висновку: [ваш текст]. Знайди слабкі місця, перспективи, які я пропустив, та альтернативний висновок.</pre>
+            <pre style="color: #10b981; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; margin: 0; line-height: 1.4;">Я дійшов такого висновку у своєму дослідженні: [ваш текст]. Знайди слабкі місця в моєму аргументі, факти, які я міг пропустити, та альтернативний висновок.</pre>
         </div>
     </div>
 
 </div>
-
 ---
 
 <a id="variant-d"></a>
