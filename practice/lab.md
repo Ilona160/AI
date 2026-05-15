@@ -12,11 +12,36 @@ title: Лабораторні роботи з ШІ
 ---
 
 ## 📑 Зміст практикуму
-1. [Лабораторна №1. Аналіз алгоритмів (YouTube/Netflix)](#lab1)
-2. [Лабораторна №2. Біометрія та Face ID](#lab2)
-3. [Лабораторна №3. Майстерність промпт-інжинірингу](#lab3)
-4. [Лабораторна №4. Детекція галюцинацій та фейків](#lab4)
-5. [Лабораторна №5. Етичний аудит та Bias](#lab5)
+
+<div class="content-block" style="background: rgba(0, 242, 255, 0.03); border: 1px solid rgba(0, 242, 255, 0.2); padding: 1.5rem; border-radius: 20px;">
+    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2;">
+        <li style="margin-bottom: 8px;">
+            <a href="#lab1" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.2rem;">🧠</span> Лабораторна №1. Аналіз алгоритмів (YouTube/Netflix)
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#lab2" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.2rem;">🛡️</span> Лабораторна №2. Біометрія та Face ID
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#lab3" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.2rem;">✍️</span> Лабораторна №3. Майстерність промпт-інжинірингу
+            </a>
+        </li>
+        <li style="margin-bottom: 8px;">
+            <a href="#lab4" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.2rem;">🔍</span> Лабораторна №4. Детекція галюцинацій та фейків
+            </a>
+        </li>
+        <li>
+            <a href="#lab5" style="color: #00f2ff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.2rem;">⚖️</span> Лабораторна №5. Етичний аудит та Bias
+            </a>
+        </li>
+    </ul>
+</div>
 
 ---
 
