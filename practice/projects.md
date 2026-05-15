@@ -3,26 +3,26 @@ layout: default
 title: Проєктна робота з ШІ
 ---
 
-# 🚀 Фінальний проєкт: Твоє рішення з ШІ
+# 🚀 Фінальна проєктна робота
 
 <div class="content-block" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.3); padding: 1.5rem; border-radius: 20px; margin-bottom: 2rem;">
-    <strong>🎓 Загальна інформація:</strong> Підсумкова робота, що демонструє ваше вміння використовувати ШІ на практиці. Виконується протягом уроків 16–18.
+    <strong>🎓 Загальна інформація:</strong> Фінальний проєкт — це підсумкова робота, що демонструє все, чого ви навчились. Виконується протягом уроків 16–18.
     <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
-        <span class="lesson-chip" style="background: rgba(0, 212, 255, 0.1); color: var(--accent);">🏆 Максимум: 100 балів</span>
-        <span class="lesson-chip" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">⏱️ Захист: 5–7 хв</span>
-        <span class="lesson-chip" style="background: rgba(255, 255, 255, 0.1); color: #fff;">👥 Форма: Індивідуально / Пара</span>
+        <span class="lesson-chip" style="background: rgba(0, 212, 255, 0.1); color: var(--accent);">📅 Планування: Урок 16</span>
+        <span class="lesson-chip" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">🎤 Захист: Уроки 17–18</span>
+        <span class="lesson-chip" style="background: rgba(255, 255, 255, 0.1); color: #fff;">🏆 Максимум: 100 балів</span>
     </div>
 </div>
 
 ---
 
 ## 📑 Зміст
-- [🧭 Як обрати варіант](#how-to-choose)
-- [📚 Варіант А — Навчальний матеріал](#variant-a)
-- [🔍 Варіант Б — Дослідження](#variant-b)
-- [🎨 Варіант В — Творчий продукт](#variant-c)
-- [📊 Варіант Г — Порівняльний аналіз](#variant-d)
-- [📋 Обов'язкова документація та критерії](#common-requirements)
+1. [🧭 Як обрати варіант](#how-to-choose)
+2. [📚 Варіант А — Навчальний матеріал](#variant-a)
+3. [🔍 Варіант Б — Дослідження](#variant-b)
+4. [🎨 Варіант В — Творчий продукт](#variant-c)
+5. [📊 Варіант Г — Порівняльний аналіз](#variant-d)
+6. [📋 Вимоги та Критерії](#common-requirements)
 
 ---
 
@@ -30,11 +30,12 @@ title: Проєктна робота з ШІ
 ## 🧭 Як обрати варіант?
 
 <div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 20px;">
-    <p>Відповідайте на питання, щоб знайти свій шлях:</p>
+    <p>Відповідайте чесно на питання:</p>
     <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 10px;">🔹 <em>Любиш пояснювати іншим?</em> → <strong>Варіант А або Б</strong></li>
-        <li style="margin-bottom: 10px;">🔹 <em>Ти творча людина (дизайн, відео)?</em> → <strong>Варіант В</strong></li>
-        <li style="margin-bottom: 10px;">🔹 <em>Цікаво порівнювати різні технології?</em> → <strong>Варіант Г</strong></li>
+        <li style="margin-bottom: 10px;">1️⃣ Мені подобається пояснювати іншим і ділитися знаннями? → <strong>Варіант А або Б</strong></li>
+        <li style="margin-bottom: 10px;">2️⃣ Я творча людина і хочу зробити щось візуальне? → <strong>Варіант В</strong></li>
+        <li style="margin-bottom: 10px;">3️⃣ Мені цікаво аналізувати і знаходити різницю? → <strong>Варіант Г</strong></li>
+        <li style="margin-bottom: 10px;">4️⃣ Я хочу глибоко дослідити конкретну сферу? → <strong>Варіант Б</strong></li>
     </ul>
 </div>
 
@@ -44,40 +45,56 @@ title: Проєктна робота з ШІ
 ## 📚 Варіант А — Навчальний матеріал
 
 <div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0, 212, 255, 0.2); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>📖 Суть</h3>
-    <p>Створення повноцінного уроку з будь-якої теми за допомогою ШІ. Ви маєте довести: ШІ допомагає вивчати складні речі швидше.</p>
+    <h3>📖 Суть проєкту</h3>
+    <p>Створення повноцінного навчального контенту з будь-якої шкільної теми з використанням ШІ. Кінцевий продукт має бути готовим до використання учнями або вчителем.</p>
 
-    <h4>🛠️ Формати продукту:</h4>
+    <h4>🛠️ Формати на вибір:</h4>
     <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0, 212, 255, 0.05);">
                 <th style="padding: 10px; text-align: left;">Формат</th>
+                <th style="padding: 10px; text-align: left;">Опис</th>
                 <th style="padding: 10px; text-align: left;">Мінімальний обсяг</th>
-                <th style="padding: 10px; text-align: left;">Інструменти</th>
             </tr>
-            <tr><td style="padding: 10px;">Навчальний сайт</td><td style="padding: 10px;">5 розділів</td><td style="padding: 10px;"><a href="https://notion.so" target="_blank" style="color: var(--accent);">Notion</a> / Canva</td></tr>
-            <tr><td style="padding: 10px;">Презентація</td><td style="padding: 10px;">15 слайдів</td><td style="padding: 10px;"><a href="https://canva.com" target="_blank" style="color: var(--accent);">Canva</a> / Google Slides</td></tr>
-            <tr><td style="padding: 10px;">Відеоурок</td><td style="padding: 10px;">4–6 хвилин</td><td style="padding: 10px;"><a href="https://clipchamp.com" target="_blank" style="color: var(--accent);">Clipchamp</a> / <a href="https://heygen.com" target="_blank" style="color: var(--accent);">HeyGen</a></td></tr>
-            <tr><td style="padding: 10px;">Посібник (PDF)</td><td style="padding: 10px;">800–1200 слів</td><td style="padding: 10px;"><a href="https://chatgpt.com" target="_blank" style="color: var(--accent);">ChatGPT</a> / Word</td></tr>
+            <tr><td style="padding: 10px;"><strong>Навчальний сайт</strong></td><td style="padding: 10px;">HTML / <a href="https://notion.so" target="_blank" style="color: var(--accent);">Notion</a> / Canva</td><td style="padding: 10px;">5 розділів</td></tr>
+            <tr><td style="padding: 10px;"><strong>Презентація</strong></td><td style="padding: 10px;"><a href="https://canva.com" target="_blank" style="color: var(--accent);">Canva</a> / Google Slides</td><td style="padding: 10px;">15 слайдів</td></tr>
+            <tr><td style="padding: 10px;"><strong>Відео</strong></td><td style="padding: 10px;">Скрінкаст / <a href="https://heygen.com" target="_blank" style="color: var(--accent);">HeyGen</a> / <a href="https://clipchamp.com" target="_blank" style="color: var(--accent);">Clipchamp</a></td><td style="padding: 10px;">4–6 хвилин</td></tr>
+            <tr><td style="padding: 10px;"><strong>Посібник</strong></td><td style="padding: 10px;">PDF / Google Docs</td><td style="padding: 10px;">800–1200 слів</td></tr>
+            <tr><td style="padding: 10px;"><strong>Квест/Гра</strong></td><td style="padding: 10px;"><a href="https://genially.com" target="_blank" style="color: var(--accent);">Genially</a> / Google Forms</td><td style="padding: 10px;">10+ кроків</td></tr>
         </table>
     </div>
 
-    <h4 style="margin-top: 1.5rem;">📍 Теми для вибору:</h4>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.85rem;">
-        <div style="background: rgba(255,255,255,0.02); padding: 10px; border-radius: 10px;">
-            <strong>🧪 Природничі:</strong> Небо блакитне? Як працює МРТ? Секрети ДНК. Енергія сонця.
+    <h4>📌 Теми для вибору (Банк ідей):</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8rem; margin: 15px 0;">
+        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+            <strong style="color: var(--accent);">🧪 Природничі:</strong><br>
+            • Чому небо блакитне?<br>
+            • Принцип роботи сонячних панелей<br>
+            • Як ДНК зберігає інформацію?<br>
+            • Як працює мило на молекулах?
         </div>
-        <div style="background: rgba(255,255,255,0.02); padding: 10px; border-radius: 10px;">
-            <strong>📐 Точні/Гуманітарні:</strong> Похідна за 5 хв. Козацька держава. Риторика. Шістдесятники.
+        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+            <strong style="color: var(--accent3);">📐 Гуманітарні/Точні:</strong><br>
+            • Теорія ймовірностей у житті<br>
+            • Козацька держава: функціонування<br>
+            • Риторичні прийоми переконання<br>
+            • Шістдесятники: хто і навіщо?
         </div>
     </div>
 
-    <h4 style="margin-top: 1.5rem;">🤖 Рекомендовані промпти:</h4>
-    <p style="font-size: 0.8rem; color: #10b981; margin-bottom: 5px;">> ГЕНЕРАЦІЯ ТЕОРІЇ:</p>
+    <h4>🤖 Рекомендовані промпти для Варіанта А:</h4>
+    <p style="font-size: 0.75rem; color: #10b981; margin-bottom: 5px;"># ГЕНЕРАЦІЯ ТЕСТУ:</p>
     <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
-Дій як вчитель [предмет]. Поясни тему "[назва]" для 10 класу. 
-Структура: Визначення, покроковий механізм, живий приклад. 
-Обсяг: 300 слів. Стиль: захоплюючий.
+Створи тест з 5 запитань на тему "[назва]" для 10 класу. 
+Розподіл: 2 вибори відповіді, 1 правда/неправда, 1 відкрите питання, 
+1 задача. Додай правильні відповіді та пояснення.
+    </pre>
+
+    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ЗАПИТ ДЛЯ ЗОБРАЖЕННЯ:</p>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Educational illustration for [topic], clear and informative, 
+suitable for high school students, [specific visual element], 
+clean design, [color scheme], digital art style, 16:9, high detail.
     </pre>
 </div>
 
@@ -87,31 +104,50 @@ title: Проєктна робота з ШІ
 ## 🔍 Варіант Б — Дослідження
 
 <div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>🔬 Аналіз впливу ШІ</h3>
-    <p>Це глибоке дослідження того, як ШІ змінює світ. Ви не просто збираєте факти, а аналізуєте ризики та перспективи.</p>
+    <h3>🔬 Аналітичне дослідження сфери ШІ</h3>
+    <p>Ви проводите глибокий аналіз конкретної сфери. Дослідження — це не реферат, а пошук відповідей на складні питання.</p>
 
-    <h4>📂 Категорії тем:</h4>
-    <ul style="font-size: 0.9rem;">
-        <li><strong>Сфери:</strong> ШІ в медицині (діагностика), Правосуддя (етика), Журналістика (фейки).</li>
-        <li><strong>Етика:</strong> Дипфейки та безпека, Цифрова нерівність, Слідкування та приватність.</li>
-        <li><strong>Технології:</strong> Чому ШІ галюцинує? Майбутнє квантових комп'ютерів.</li>
-    </ul>
+    <h4>📂 Теми для дослідження:</h4>
+    <div style="font-size: 0.85rem; columns: 2; color: var(--text);">
+        • ШІ в медицині: діагностика та ліки<br>
+        • ШІ в освіті: персоналізація<br>
+        • ШІ в правосудді: етика вироків<br>
+        • Дипфейки: загроза дезінформації<br>
+        • Цифрова нерівність та ШІ<br>
+        • ШІ та безробіття в Україні<br>
+        • Чому ШІ галюцинує?<br>
+        • Відкритий vs Закритий ШІ
+    </div>
 
-    <h4>📄 Структура звіту (600–800 слів):</h4>
-    <p style="font-size: 0.85rem; background: rgba(168, 85, 247, 0.05); padding: 10px; border-radius: 10px;">
-        1. Вступ (Гіпотеза) → 2. Методологія (як ви перевіряли ШІ) → 3. Стан речей сьогодні (2-3 реальних кейси) → 4. Переваги та Ризики → 5. Власний аналіз → 6. Джерела (мінімум 2 — не ШІ).
-    </p>
+    <h4 style="margin-top: 20px;">📄 Обов'язкова структура дослідження:</h4>
+    <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; font-size: 0.85rem; border-left: 3px solid #a855f7;">
+        <strong>1. ВСТУП (150–200 слів):</strong> Важливість теми, дослідницьке питання, гіпотеза.<br>
+        <strong>2. МЕТОДОЛОГІЯ (100–150 слів):</strong> Які ШІ та джерела використовували, як перевіряли факти.<br>
+        <strong>3. ОСНОВНА ЧАСТИНА (600–800 слів):</strong> Стан речей сьогодні, 2-3 реальні кейси, переваги та ризики, різні точки зору.<br>
+        <strong>4. ВЛАСНИЙ АНАЛІЗ (200–250 слів):</strong> Чи підтвердилась гіпотеза? Що здивувало?<br>
+        <strong>5. ВИСНОВКИ ТА ДЖЕРЕЛА:</strong> 3-4 тези, рекомендації, список джерел (мін. 2 не-ШІ).
+    </div>
 
-    <h4 style="margin-top: 1.5rem;">🤖 Рекомендовані промпти:</h4>
-    <p style="font-size: 0.8rem; color: #10b981; margin-bottom: 5px;">> АНАЛІТИЧНИЙ ОГЛЯД:</p>
+    <h4 style="margin-top: 20px;">🤖 Рекомендовані промпти для Варіанта Б:</h4>
+    <p style="font-size: 0.75rem; color: #10b981; margin-bottom: 5px;"># ГЕНЕРАЦІЯ ОГЛЯДУ ТЕМИ:</p>
     <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
 Дій як науковий аналітик. Дай структурований огляд теми 
-"[ваша тема]" на 2024 рік. Включи 3 реальних кейси з 
-назвами компаній та 3 доведені ризики.
+"[ваша тема]" станом на 2024 рік. Включи: 3 реальні кейси 
+з назвами компаній, 3 переваги, 3 ризики та 2 суперечливі питання.
     </pre>
-    <p style="margin-top: 10px; text-align: center;">
-        <a href="https://perplexity.ai" target="_blank" class="nav-link" style="font-size: 0.8rem; border-color: #a855f7;">🔗 Перевірка фактів через Perplexity</a>
-    </p>
+
+    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ПОШУК РІЗНИХ ТОЧОК ЗОРУ:</p>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Наведи аргументи 3-х сторін щодо "[ваша тема]": 
+1. Оптиміст (переваги), 2. Скептик (заперечення), 
+3. Прагматик (баланс). Для кожної: 2-3 конкретні аргументи.
+    </pre>
+
+    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ПЕРЕВІРКА ВЛАСНОГО АНАЛІЗУ:</p>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Я дійшов такого висновку: [ваш текст]. Знайди слабкі місця, 
+перспективи, які я пропустив, та альтернативний висновок.
+    </pre>
 </div>
 
 ---
@@ -120,31 +156,23 @@ title: Проєктна робота з ШІ
 ## 🎨 Варіант В — Творчий продукт
 
 <div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(16, 185, 129, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>🎨 Мистецтво та сторителінг</h3>
-    <p>Розкажіть про ШІ через нестандартні формати: комікси, подкасти або ігри.</p>
+    <h3>🎨 Мистецтво та сторителінг через ШІ</h3>
+    <p>Ви створюєте продукт, що розкриває аспект ШІ через гру, комікс або аудіо. Це має бути технічно точно, але творчо.</p>
 
     <div class="theory-grid">
-        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+        <div class="theory-card" style="margin:0; padding: 15px; border-top: 2px solid #10b981;">
             <h4>🎙️ Подкаст (8-12 хв)</h4>
-            <p style="font-size: 0.8rem;">Інтерв'ю з ШІ або розповідь про тренди. Музика від <a href="https://suno.com" target="_blank" style="color: #10b981;">Suno</a>.</p>
+            <p style="font-size: 0.8rem;">Сценарій, звукова якість, музика від <a href="https://suno.com" target="_blank" style="color: #10b981;">Suno</a>. Мінімум 2 рубрики.</p>
         </div>
-        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+        <div class="theory-card" style="margin:0; padding: 15px; border-top: 2px solid #10b981;">
             <h4>🖼️ Комікс (8-12 стор)</h4>
-            <p style="font-size: 0.8rem;">Сюжет про життя з ШІ. Візуал через <a href="https://canva.com" target="_blank" style="color: #10b981;">Canva Magic</a>.</p>
+            <p style="font-size: 0.8rem;">Сюжет + персонажі. Графіка через <a href="https://canva.com" target="_blank" style="color: #10b981;">Canva AI</a> або вручну.</p>
         </div>
-        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
-            <h4>🎮 Квест (15+ кроків)</h4>
-            <p style="font-size: 0.8rem;">Навчальна гра в <a href="https://genially.com" target="_blank" style="color: #10b981;">Genially</a> або Google Forms.</p>
+        <div class="theory-card" style="margin:0; padding: 15px; border-top: 2px solid #10b981;">
+            <h4>🎮 Гра/Квест (15+ кр)</h4>
+            <p style="font-size: 0.8rem;">Навчальна механіка. Інструменти: <a href="https://genially.com" target="_blank" style="color: #10b981;">Genially</a> або Twine.</p>
         </div>
     </div>
-
-    <h4 style="margin-top: 1.5rem;">🤖 Рекомендовані промпти:</h4>
-    <p style="font-size: 0.8rem; color: #10b981; margin-bottom: 5px;">> СЦЕНАРІЙ ГРИ/КОМІКСУ:</p>
-    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
-Розроби механіку квесту на тему "[концепт ШІ]". 
-Придумай 3 ключових розгалуження, де вибір гравця 
-впливає на результат. Додай навчальний фінал.
-    </pre>
 </div>
 
 ---
@@ -152,38 +180,33 @@ title: Проєктна робота з ШІ
 <a id="variant-d"></a>
 ## 📊 Варіант Г — Порівняльний аналіз
 
-<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
-    <h3>⚔️ Битва ШІ-інструментів</h3>
-    <p>Проведіть порівняння 3-х сервісів за 5+ критеріями (точність, швидкість, укр. мова, ціна, зручність).</p>
-
-    <h4>🧪 Варіанти порівняння:</h4>
-    <ul style="font-size: 0.9rem;">
-        <li><strong>Текстові:</strong> <a href="https://chatgpt.com" target="_blank" style="color: #f59e0b;">ChatGPT</a> vs <a href="https://claude.ai" target="_blank" style="color: #f59e0b;">Claude</a> vs <a href="https://gemini.google.com" target="_blank" style="color: #f59e0b;">Gemini</a>.</li>
-        <li><strong>Зображення:</strong> Midjourney vs Firefly vs DALL-E 3.</li>
-        <li><strong>Освітні:</strong> Khanmigo vs Duolingo Max vs Quizlet AI.</li>
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>📊 Битва титанів ШІ</h3>
+    <p>Порівняння 3+ інструментів за власною системою критеріїв (Benchmark).</p>
+    
+    <ul style="font-size: 0.85rem;">
+        <li>• <strong>Текстові:</strong> ChatGPT vs <a href="https://claude.ai" target="_blank" style="color: #f59e0b;">Claude</a> vs <a href="https://gemini.google.com" target="_blank" style="color: #f59e0b;">Gemini</a>.</li>
+        <li>• <strong>Зображення:</strong> Midjourney vs Firefly vs DALL-E 3.</li>
+        <li>• <strong>Освітні:</strong> Khanmigo vs Duolingo Max.</li>
     </ul>
 
-    <h4 style="margin-top: 1.5rem;">🤖 Рекомендовані промпти:</h4>
-    <p style="font-size: 0.8rem; color: #10b981; margin-bottom: 5px;">> ТЕСТУВАННЯ (однаковий запит для всіх):</p>
-    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
-Поясни як працює нейронна мережа для 10 класу. 
-Включи аналогію, 3 приклади та обмеження. 
-Обсяг 250 слів. Без формул.
-    </pre>
+    <div style="background: rgba(245, 158, 11, 0.05); padding: 1rem; border-radius: 12px; margin-top: 15px; border-left: 4px solid #f59e0b;">
+        <strong>📈 Обов'язково:</strong> Зведена таблиця з ваговими коефіцієнтами (Точність, Швидкість, UX, Укр. мова).
+    </div>
 </div>
 
 ---
 
 <a id="common-requirements"></a>
-## 📋 Обов'язкова документація
+## 📋 Вимоги та Документація
 
-<div class="content-block" style="background: rgba(255, 255, 255, 0.02); border: 1px dashed var(--accent); padding: 1.5rem; border-radius: 20px; font-size: 0.85rem;">
-    <h4>📦 Картка проєкту (здається разом із роботою):</h4>
-    <ul>
-        <li><strong>Список інструментів:</strong> Де і що використовували.</li>
-        <li><strong>3 найважливіших промпти:</strong> Ваші найкращі запити.</li>
-        <li><strong>Верифікація:</strong> Мінімум 5 фактів, перевірених через Google/Scholar.</li>
-        <li><strong>Рефлексія:</strong> Що ШІ зробив добре, а де "згалюцинував"?</li>
+<div class="content-block" style="background: rgba(255, 255, 255, 0.02); border: 1px dashed var(--accent); padding: 2rem; border-radius: 24px;">
+    <h4>📦 Картка проєкту (обов'язково):</h4>
+    <ul style="font-size: 0.85rem; list-style: none; padding: 0;">
+        <li>🔹 <strong>Список інструментів:</strong> Назва та для чого використовувався.</li>
+        <li>🔹 <strong>3 топ-промпти:</strong> Запит + оцінка результату.</li>
+        <li>🔹 <strong>Верифікація:</strong> Мінімум 5 фактів, перевірених через Google/Scholar.</li>
+        <li>🔹 <strong>Рефлексія:</strong> Що здивувало? Як ШІ допоміг/розчарував?</li>
     </ul>
 </div>
 
@@ -192,16 +215,16 @@ title: Проєктна робота з ШІ
 <a id="criteria"></a>
 ## 📈 Критерії оцінювання (100 балів)
 
-| Критерій | Бали | Опис |
+| Критерій | Бали | Що оцінюємо |
 | :--- | :--- | :--- |
 | **Планування** | 15 | Чітка мета та логіка структури. |
-| **Контент** | 30 | Достовірність фактів, перевірка та глибина. |
-| **Використання ШІ** | 20 | Складність промптів, використання 2+ сервісів. |
-| **Власний внесок** | 20 | Редагування, критичне мислення, власний дизайн. |
-| **Захист** | 15 | Якість виступу та відповіді на питання. |
+| **Контент** | 30 | Точність, перевірені факти, джерела. |
+| **ШІ-майстерність** | 20 | Складність промптів, 2+ інструменти. |
+| **Власний внесок** | 20 | Редагування ШІ-тексту, власний дизайн. |
+| **Захист** | 15 | Якість виступу та відповіді на Q&A. |
 
 ---
 
 <div style="text-align: center; margin-top: 3rem;">
-    <a href="https://ilona160.github.io/AI/practice/index.html" class="nav-link">← Повернутися до вибору практики</a>
+    <a href="https://ilona160.github.io/AI/practice/index.html" class="nav-link">← Назад до вибору практики</a>
 </div>
