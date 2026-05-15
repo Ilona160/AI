@@ -249,6 +249,79 @@ title: Проєктна робота з ШІ
     </div>
 
 </div>
+
+
+---
+
+<a id="variant-c"></a>
+## 🎨 Варіант В — Творчий продукт
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(16, 185, 129, 0.3); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>🎨 Мистецтво та сторителінг через ШІ</h3>
+    <p style="margin-bottom: 2rem;">Ви створюєте продукт, що розкриває аспект ШІ через гру, комікс або аудіо. Це має бути технічно точно, але творчо.</p>
+
+    <div class="theory-grid">
+        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+            <h4 style="display: flex; align-items: center; gap: 10px;">🎙️ Подкаст (8–12 хв)</h4>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 10px;">Сценарій, звукова якість, музика від <a href="https://suno.com" target="_blank" style="color: #10b981;">Suno</a>. Мінімум 2 рубрики.</p>
+        </div>
+        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+            <h4 style="display: flex; align-items: center; gap: 10px;">🖼️ Комікс (8–12 стор)</h4>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 10px;">Сюжет + персонажі. Графіка через <a href="https://canva.com" target="_blank" style="color: #10b981;">Canva AI</a> або вручну.</p>
+        </div>
+        <div class="theory-card" style="margin:0; padding: 1.5rem; border-top: 2px solid #10b981;">
+            <h4 style="display: flex; align-items: center; gap: 10px;">🎮 Гра/Квест (15+ кр)</h4>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 10px;">Навчальна механіка. Інструменти: <a href="https://genially.com" target="_blank" style="color: #10b981;">Genially</a> або Twine.</p>
+        </div>
+    </div>
+</div>
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>📝 Специфікації форматів</h3>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; font-size: 0.85rem; line-height: 1.6;">
+        <p><strong>🎥 Формат В-3: Документальне відео.</strong> Тривалість 5–8 хв. Обов'язкова структура: проблема → контекст → різні думки → висновок. Джерела вказуються в титрах.</p>
+        <p><strong>📖 Формат В-5: Зін (zine) — міні-журнал.</strong> 8–16 сторінок А5. Поєднання тексту і зображень (мін. 50% візуалу), авторський голос та особистий досвід.</p>
+        <p><strong>🎭 Комікс/Новела:</strong> Мінімум 4 панелі на сторінку. Текст має містити діалоги та пояснювальні вставки.</p>
+    </div>
+</div>
+
+<div class="content-block" style="background: rgba(16, 185, 129, 0.03); border: 1px solid rgba(16, 185, 129, 0.4); padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>✅ Обов’язкові елементи (Check-list)</h3>
+    <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+        <li style="margin-bottom: 10px;">🔹 <strong>Змістовність:</strong> глядач/гравець має дізнатися реальні факти про роботу ШІ.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Точність:</strong> відсутність дезінформації, перевірка фактів через джерела.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Використання ШІ:</strong> залучено мінімум 2 ШІ-інструменти для створення продукту.</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Атрибуція:</strong> чітко розмежовано: "Це згенеровано ШІ, а це написано мною".</li>
+        <li style="margin-bottom: 10px;">🔹 <strong>Документація:</strong> 1 сторінка опису процесу (які промпти спрацювали, а які — ні).</li>
+    </ul>
+</div>
+
+<div class="content-block" style="background: rgba(255, 255, 255, 0.05); border: 1px solid #10b981; padding: 2rem; border-radius: 24px; margin-bottom: 2rem;">
+    <h3>🤖 Рекомендовані промпти для творчості</h3>
+
+    <p style="font-size: 0.75rem; color: #10b981; margin-bottom: 5px;"># ДЛЯ СЦЕНАРІЮ КОМІКСУ:</p>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Напиши сценарій для 3 сторінок коміксу про [тема]. 
+Персонажі: [опишіть]. Формат для кожної сторінки: 
+СТОРІНКА [N], Панель 1: [що зображено] | Текст: [діалог]. 
+Вимоги: конфлікт у поч., пояснення ШІ через дії, розв'язка.
+    </pre>
+
+    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ДЛЯ ВСТУПУ ДО ПОДКАСТУ:</p>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Напиши сценарій 2-хвилинного вступу до подкасту на тему "[назва]". 
+Тон: розмовний, аудиторія: 15–17 років. Почни з "гука" (цікавий факт). 
+Є обіцянка: "У цьому випуску ти дізнаєшся...". Обсяг: 250 слів.
+    </pre>
+
+    <p style="font-size: 0.75rem; color: #10b981; margin-top: 15px; margin-bottom: 5px;"># ДЛЯ МЕХАНІКИ ГРИ:</p>
+    <pre style="background: #000; padding: 1rem; border-radius: 10px; border: 1px solid #10b981; color: #10b981; font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
+Розроби механіку квесту на тему "[концепт ШІ]" для учнів 10 класу. 
+Роль гравця: [персонаж]. Мета: [ціль]. 
+Придумай 3 розгалуження (А або В) з логічними наслідками.
+    </pre>
+</div>
+
 ---
 
 <a id="variant-d"></a>
