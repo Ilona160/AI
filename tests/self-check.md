@@ -78,3 +78,41 @@ title: Тести для самоперевірки
   <button class="quiz-btn" onclick="check(this, true, '✅ Так! ШІ має стати інструментом, що підсилює наші можливості.')">Аугментація можливостей людини</button>
   <p class="feedback"></p>
 </div>
+
+<div class="content-block">
+  <p><strong>11. Що відбувається у процесі перенавчання (Overfitting) моделі?</strong></p>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Модель не втрачає пам\'ять, навпаки — запам\'ятовує забагато деталей.')">Модель забуває раніше вивчені дані</button>
+  <button class="quiz-btn" onclick="check(this, true, '✅ Вірно! Модель «зазубрює» тренувальні дані разом із шумом і втрачає здатність до узагальнення.')">Модель ідеально працює на тренувальних даних, але дає збій на нових</button>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Зниження швидкості — це апаратна проблема, а не помилка навчання.')">Знижується швидкість обчислень через брак ресурсів</button>
+  <p class="feedback"></p>
+</div>
+
+<div class="content-block">
+  <p><strong>12. Який механізм дозволяє моделям Transformer визначати зв\'язки між словами незалежно від відстані між ними?</strong></p>
+  <button class="quiz-btn" onclick="check(this, true, '✅ Правильно! Механізм Self-Attention (увага до себе) дозволяє фокусуватися на релевантних частинах контексту.')">Механізм уваги (Self-Attention)</button>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Градієнтний спуск оптимізує ваги, а не відслідковує контекстні зв\'язки слів.')">Градієнтний спуск (Gradient Descent)</button>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Дерева рішень — окремий класичний алгоритм ML, не пов\'язаний з LLM.')">Дерево рішень</button>
+  <p class="feedback"></p>
+</div>
+
+<div class="content-block">
+  <p><strong>13. Який підхід використовується для донавчання базової моделі під конкретну прикладну задачу?</strong></p>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Повне перенавчання з нуля потребує величезних ресурсів і рідко застосовується.')">Навчання з нуля (Pre-training)</button>
+  <button class="quiz-btn" onclick="check(this, true, '✅ Так! Fine-tuning дозволяє адаптувати вже навчену модель під вузькопрофільні завдання.')">Тонке налаштування (Fine-tuning)</button>
+  <p class="feedback"></p>
+</div>
+
+<div class="content-block">
+  <p><strong>14. Що означає технологія RAG (Retrieval-Augmented Generation)?</strong></p>
+  <button class="quiz-btn" onclick="check(this, true, '✅ Вірно! RAG спочатку шукає релевантні факти у зовнішній базі, а потім генерує відповідь, зменшуючи галюцинації.')">Поєднання пошуку інформації в зовнішніх джерелах із генерацією</button>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Це опис роботи алгоритмів комп\'ютерного зору (Computer Vision).')">Метод розпізнавання облич на фото</button>
+  <button class="quiz-btn" onclick="check(this, false, '❌ Це архітектура для генерації зображень (GAN), а не текстовий пошук.')">Генеративно-змагальна мережа</button>
+  <p class="feedback"></p>
+</div>
+
+<div class="content-block">
+  <p><strong>15. Метод перевірки, чи здатна машина демонструвати інтелектуальну поведінку, невідрізнену від людської:</strong></p>
+  <button class="quiz-btn" onclick="check(this, true, '✅ Правильно! Тест Тюрінга, запропонований Аланом Тюрінгом у 1950 році.')">Тест Тюрінга</button>
+  <button class="quiz-btn" onclick="check(this, false, '❌ CAPTCHA навпаки створена, щоб відрізнити бота від реальної людини.')">Тест CAPTCHA</button>
+  <p class="feedback"></p>
+</div>
